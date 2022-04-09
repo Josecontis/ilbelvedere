@@ -1,0 +1,48 @@
+.top-bar {
+    height: 80px;
+    background-color: #7f997c;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.top-bar img {
+    height: 60px;
+    margin-left: 4%;
+}
+
+.top-bar button {
+    height: 100%;
+    width: 170px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+
+.info {
+    margin-left: 7%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info a {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.info svg {
+    color: #000000;
+    font-size: 22px;
+}
+
+.info a:hover {
+    color: #000000;
+    cursor: pointer;
+}
