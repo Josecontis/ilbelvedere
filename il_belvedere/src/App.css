@@ -3,18 +3,27 @@
 }
 
 .App .watsapp-button {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #075E54;
   color: #ffffff;
-  font-size: 24px;
+  border-radius: 5px;
+  font-size: 32px;
 }
 
 .watsapp-button {
   position: fixed;
   bottom: 20px;
   left: 20px;
+}
+.App-content{
+  height: 2300px;
+}
+.button-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
