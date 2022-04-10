@@ -1,6 +1,6 @@
 .top-bar {
     height: 80px;
-    background-color: #7f997c;
+    background-color: #425141;
     display: flex;
     width: 100%;
     align-items: center;
@@ -15,10 +15,17 @@
     height: 100%;
     width: 170px;
     border: none;
-    background-color: #000000;
+    background-color: #8fb98a;
     color: #ffffff;
     font-size: 20px;
     margin-left: auto;
+    transition-duration: 1s;
+}
+
+.top-bar button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 
@@ -38,11 +45,11 @@
 }
 
 .info svg {
-    color: #000000;
+    color: #8fb98a;
     font-size: 22px;
 }
 
 .info a:hover {
-    color: #000000;
+    color: #8fb98a;
     cursor: pointer;
 }

@@ -3,7 +3,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlinePhotograph } from "react-icons/hi";
 import { FiPhoneCall } from "react-icons/fi";
-import logoHome from "../Assets/Image/logoHomeSmall.png";
+import logoHome from "../Assets/Image/logoHomeWhiteSmall.png";
 
 function TopBar() {
   return (
