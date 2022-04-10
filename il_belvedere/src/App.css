@@ -19,11 +19,30 @@
   bottom: 20px;
   left: 20px;
 }
-.App-content{
+
+.App-content {
   height: 2300px;
 }
-.button-to-top{
+
+.button-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8fb98a;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  transition-duration: 1s;
+  font-size: 20px;
+}
+
+.button-to-top:hover {
+  cursor: pointer;
+  background-color: #425141;
+  color: #ffffff;
 }

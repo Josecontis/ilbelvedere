@@ -1,8 +1,11 @@
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { IoIosArrowUp } from "react-icons/io";
+
 import "./App.css";
 import TopBar from "./Components/TopBar";
+import Home from "./Pages/Home";
 
-function App() {
+const App = () => {
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {
     scrollFunction();
@@ -29,9 +32,11 @@ function App() {
     <>
       <TopBar />
       <div className="App">
-        <div className="App-content"></div>
+        <div className="App-content">
+          <Home />
+        </div>
         <a
-          class="watsapp-button"
+          className="watsapp-button"
           data-action="open"
           data-phone="222"
           data-message="Salve! La contatto per maggiori informazioni"
@@ -46,11 +51,11 @@ function App() {
           id="myBtn"
           title="Go to top"
         >
-          Top
+          <IoIosArrowUp />
         </button>
       </div>
     </>
   );
-}
+};
 
 export default App;

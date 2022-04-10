@@ -6,7 +6,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 import logoHome from "../Assets/Image/logoHomeWhiteSmall.png";
 
-function TopBar() {
+const TopBar = () => {
   return (
     <div className="top-bar">
       <img src={logoHome} />
@@ -29,6 +29,6 @@ function TopBar() {
       <button>PRENOTA</button>
     </div>
   );
-}
+};
 
 export default TopBar;
