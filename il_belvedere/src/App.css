@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .App .watsapp-button {
@@ -45,4 +47,25 @@
   cursor: pointer;
   background-color: #425141;
   color: #ffffff;
+}
+
+/* Scrollbar style */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8fb98a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #425141;
 }

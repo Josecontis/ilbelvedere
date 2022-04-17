@@ -1,4 +1,5 @@
 import "./Home.css";
+import envImg from "../Assets/Image/333730246crop.jpg";
 import bedImg from "../Assets/Image/336261885crop.jpg";
 import bathImg from "../Assets/Image/342667958crop.jpg";
 
@@ -7,58 +8,52 @@ const Home = () => {
   showSlides();
 
   function showSlides() {
-    let i;
+    let i = 0;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    if (slides.length) {
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex && slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1] &&
+        (slides[slideIndex - 1].style.display = "block");
+      dots[slideIndex - 1] && (dots[slideIndex - 1].className += " active");
     }
-    slideIndex++;
-    if (slideIndex && slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1] && (slides[slideIndex - 1].style.display = "block");
-    dots[slideIndex - 1] && (dots[slideIndex - 1].className += " active");
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
+    setTimeout(showSlides, 7000); // Change image every 2 seconds
   }
 
   return (
     <>
-      {/* <div className="w3-content w3-section">
-        <div className="mySlides">
-          <img
-            alt="cc1"
-            className="w3-animate-fading"
-            src={bedImg}
-            style={{ width: "100%" }}
-          />
-        </div>
-        <div className="mySlides">
-          <img
-            alt="cc"
-            className="w3-animate-fading"
-            src={bathImg}
-            style={{ width: "100%" }}
-          />
-        </div>
-      </div> */}
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <img alt="cc" src={bedImg} style={{ width: "100%" }} />
-          <div class="text">Benvenuti</div>
+          <img alt="env" src={bedImg} style={{ width: "100%" }} />
+          <div class="welcome-text">Benvenuti</div>
+          <div class="label">
+            Trascorri i tuoi momenti di relax al centro di gravina in puglia
+          </div>
+          <div class="sub-label">
+            Le nostre stanze sono arredate con gusto ed eleganza
+          </div>
         </div>
         <div class="mySlides fade">
-          <img alt="cc1" src={bathImg} style={{ width: "100%" }} />
+          <img alt="bed" src={envImg} style={{ width: "100%" }} />
         </div>
-      </div>
-      <br />
-      <div style={{ textAlign: "center" }}>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <div class="mySlides fade">
+          <img alt="bath" src={bathImg} style={{ width: "100%" }} />
+        </div>
+
+        <div className="dot-container">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </div>
     </>
   );
