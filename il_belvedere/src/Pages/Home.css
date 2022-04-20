@@ -1,6 +1,6 @@
 .mySlides {
     display: none;
-    
+
 }
 
 img {
@@ -10,8 +10,10 @@ img {
 /* Slideshow container */
 .slideshow-container {
     min-width: 1000px;
+    height: 900px;
     max-height: 900px;
     position: relative;
+    background-color: #425141;
     margin: auto;
 }
 
@@ -83,7 +85,7 @@ img {
 
 .dot-container {
     top: 845px;
-    left: 50%;
+    left: 47.5%;
     position: absolute;
     text-align: center;
 }

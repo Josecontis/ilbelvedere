@@ -2,15 +2,18 @@ import "./Home.css";
 import envImg from "../Assets/Image/333730246crop.jpg";
 import bedImg from "../Assets/Image/336261885crop.jpg";
 import bathImg from "../Assets/Image/342667958crop.jpg";
+import Splitter from "../Components/Splitter";
+import { IoBedOutline, IoCompassOutline } from "react-icons/io5";
 
 const Home = () => {
-  let slideIndex = 0;
   showSlides();
+  let slideIndex = 0;
 
   function showSlides() {
     let i = 0;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
+
     if (slides.length) {
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -29,32 +32,60 @@ const Home = () => {
     setTimeout(showSlides, 7000); // Change image every 2 seconds
   }
 
+  const services = [
+    {
+      icon: "",
+      label: "Aria condizionata",
+    },
+    {
+      icon: "",
+      label: "Frigorifero",
+    },
+    {
+      icon: "",
+      label: "Free WI-FI",
+    },
+    {
+      icon: "",
+      label: "Tv LCD",
+    },
+  ];
   return (
     <>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
+      <div className="slideshow-container">
+        <div className="mySlides fade">
           <img alt="env" src={bedImg} style={{ width: "100%" }} />
-          <div class="welcome-text">Benvenuti</div>
-          <div class="label">
+          <div className="welcome-text">Benvenuti</div>
+          <div className="label">
             Trascorri i tuoi momenti di relax al centro di gravina in puglia
           </div>
-          <div class="sub-label">
-            Le nostre stanze sono arredate con gusto ed eleganza
+          <div className="sub-label">
+            L'appartamento è arredato con gusto ed eleganza
           </div>
         </div>
-        <div class="mySlides fade">
+        <div className="mySlides fade">
           <img alt="bed" src={envImg} style={{ width: "100%" }} />
         </div>
-        <div class="mySlides fade">
+        <div className="mySlides fade">
           <img alt="bath" src={bathImg} style={{ width: "100%" }} />
         </div>
 
         <div className="dot-container">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
         </div>
       </div>
+      <Splitter
+        icon={<IoBedOutline />}
+        title="servizi"
+        subtitleServices={services}
+      />
+      <Splitter
+        icon={<IoCompassOutline />}
+        title="Posti da visitare"
+        subtitle="Cosa vedere a Gravina in puglia"
+      />
     </>
   );
 };
