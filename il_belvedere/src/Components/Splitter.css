@@ -12,10 +12,10 @@
     content: "";
     position: absolute;
     bottom: 94%;
-    right: 0;
+    right: 20px;
     border-width: 0;
     top: 6%;
-    width: 48%;
+    width: 47%;
     border-style: solid;
     border-color: #ccc;
     border-bottom-width: 1px;
@@ -25,10 +25,10 @@
     content: "";
     position: absolute;
     bottom: 94%;
-    left: 0;
+    left: 20px;
     border-width: 0;
     top: 6%;
-    width: 48%;
+    width: 47%;
     border-style: solid;
     border-color: #ccc;
     border-bottom-width: 1px;
