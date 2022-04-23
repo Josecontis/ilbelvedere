@@ -9,10 +9,10 @@ import logoHome from "../Assets/Image/logoHomeWhiteSmall.png";
 const TopBar = () => {
   return (
     <div className="top-bar">
-      <img src={logoHome} />
+      <img alt="logo" src={logoHome} />
       <div className="info">
         <HiOutlineHome />
-        <a href="">Home</a>
+        <a href="/">Home</a>
       </div>
       <div className="info">
         <HiOutlineLocationMarker />
@@ -30,7 +30,15 @@ const TopBar = () => {
         <HiOutlineMail />
         <a href="mailto:ilBelvedere@gmail.com">ilBelvedere@gmail.com</a>
       </div>
-      <button>PRENOTA</button>
+      <button>
+        <a
+          rel="noreferrer"
+          href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
+          target="_blank"
+        >
+          PRENOTA
+        </a>
+      </button>
     </div>
   );
 };

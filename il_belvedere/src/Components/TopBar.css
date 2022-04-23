@@ -11,6 +11,11 @@
     margin-left: 4%;
 }
 
+.top-bar img:hover {
+    transform: scale(1.1);
+}
+
+
 .top-bar button {
     height: 100%;
     width: 170px;
@@ -20,6 +25,11 @@
     font-size: 20px;
     margin-left: auto;
     transition-duration: 1s;
+}
+
+.top-bar button a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .top-bar button:hover {

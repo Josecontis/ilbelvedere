@@ -7,6 +7,7 @@ img {
     vertical-align: middle;
 }
 
+
 /* Slideshow container */
 .slideshow-container {
     min-width: 1000px;
@@ -32,7 +33,7 @@ img {
     text-align: center;
     font-size: 86px;
     font-weight: 700;
-    animation: slide-right 2s forwards;
+    animation: slide-right 1.5s forwards;
     transform: translateX(100%);
 }
 
@@ -54,7 +55,7 @@ img {
     font-size: 32px;
     line-height: 60px;
     font-weight: 600;
-    animation: slide-right 1.5s forwards;
+    animation: slide-right 2s forwards;
     transform: translateX(-100%);
 }
 
@@ -67,8 +68,48 @@ img {
     left: 30%;
     text-align: center;
     font-size: 16px;
+    animation: slide-right 2.5s forwards;
+    transform: translateX(100%);
+}
+
+.review-label-coffe {
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: absolute;
+    float: right;
+    bottom: 76%;
+    width: 40%;
+    left: 54%;
+    font-size: 26px;
     animation: slide-right 1s forwards;
     transform: translateX(100%);
+    text-align: end;
+}
+
+.review-label-coffe .review-author-coffe {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.review-label-bath {
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: absolute;
+    float: left;
+    top: 76%;
+    width: 40%;
+    right: 54%;
+    font-size: 26px;
+    animation: slide-right 1s forwards;
+    transform: translateX(100%);
+    text-align: start;
+}
+
+.review-label-bath .review-author-bath {
+    font-weight: normal;
+    font-size: 24px;
 }
 
 /* The dots/bullets/indicators */
