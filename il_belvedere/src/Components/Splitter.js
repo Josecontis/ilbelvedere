@@ -8,8 +8,8 @@ const Splitter = ({ icon, title, subtitle, subtitleServices }) => {
       <div className="splitter-subtitle">{subtitle}</div>
       <div className="splitter-subtitle-services">
         {subtitleServices &&
-          subtitleServices.map((el) => (
-            <div className="services">
+          subtitleServices.map((el, index) => (
+            <div key={index} className="services">
               {el.icon}
               {el.label}
             </div>

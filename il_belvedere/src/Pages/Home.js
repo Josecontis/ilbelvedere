@@ -8,13 +8,21 @@ import { RiComputerFill } from "react-icons/ri";
 import { AiFillEye } from "react-icons/ai";
 import { GiBoatPropeller } from "react-icons/gi";
 import { BsDoorClosedFill, BsSafe2Fill } from "react-icons/bs";
-import { MdDryCleaning, MdLocalLaundryService, MdLuggage } from "react-icons/md";
+import {
+  MdDryCleaning,
+  MdLocalLaundryService,
+  MdLuggage,
+} from "react-icons/md";
 import { FaWifi, FaShower } from "react-icons/fa";
 import ImageViewer from "../Components/ImageViewer";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-  showSlides();
   let slideIndex = 0;
+
+  useEffect(() => {
+    showSlides();
+  });
 
   function showSlides() {
     let i = 0;
@@ -36,7 +44,7 @@ const Home = () => {
         (slides[slideIndex - 1].style.display = "block");
       dots[slideIndex - 1] && (dots[slideIndex - 1].className += " active");
     }
-    setTimeout(showSlides, 7000); // Change image every 2 seconds
+    setTimeout(showSlides, 7000);
   }
 
   const services = [
@@ -87,16 +95,6 @@ const Home = () => {
     <>
       <div className="slideshow-container">
         <div className="mySlides fade">
-          <img alt="env" src={bedImg} style={{ width: "100%" }} />
-          <div className="welcome-text">Benvenuti</div>
-          <div className="label">
-            Trascorri i tuoi momenti di relax al centro di gravina in puglia
-          </div>
-          <div className="sub-label">
-            L'appartamento è arredato con gusto ed eleganza
-          </div>
-        </div>
-        <div className="mySlides fade">
           <img alt="bed" src={coffeImg} style={{ width: "100%" }} />
           <div className="review-label-coffe">
             Tutto perfetto. La posizione nelle immediate vicinanze del ponte e a
@@ -108,6 +106,17 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="mySlides fade">
+          <img alt="env" src={bedImg} style={{ width: "100%" }} />
+          <div className="welcome-text">Benvenuti</div>
+          <div className="label">
+            Trascorri i tuoi momenti di relax al centro di gravina in puglia
+          </div>
+          <div className="sub-label">
+            L'appartamento è arredato con gusto ed eleganza
+          </div>
+        </div>
+
         <div className="mySlides fade">
           <img alt="bath" src={bathImg} style={{ width: "100%" }} />
           <div className="review-label-bath">

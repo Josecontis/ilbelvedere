@@ -2,9 +2,8 @@ import "./TopBar.css";
 import { HiOutlineHome, HiOutlineMail } from "react-icons/hi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlinePhotograph } from "react-icons/hi";
-import { FiPhoneCall } from "react-icons/fi";
-
 import logoHome from "../Assets/Image/logoHomeWhiteSmall.png";
+import { AiOutlinePhone } from "react-icons/ai";
 
 const TopBar = () => {
   return (
@@ -23,7 +22,7 @@ const TopBar = () => {
         <a href="callto:3281349208">Itinerari</a>
       </div>
       <div className="info">
-        <FiPhoneCall />
+        <AiOutlinePhone />
         <a href="callto:3281349208">Cell.: (+39) 328 1349208</a>
       </div>
       <div className="info">
