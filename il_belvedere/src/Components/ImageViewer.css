@@ -30,10 +30,10 @@
 }
 
 .modal-content {
-    margin: 40px auto;
+    margin: auto;
     display: block;
     width: 80%;
-    max-width: 1340px;
+    max-width: 1000px;
 }
 
 .modal-content {

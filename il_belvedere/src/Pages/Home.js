@@ -15,7 +15,7 @@ import {
 } from "react-icons/md";
 import { FaWifi, FaShower } from "react-icons/fa";
 import ImageViewer from "../Components/ImageViewer";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Home = () => {
   let slideIndex = 0;
@@ -141,16 +141,27 @@ const Home = () => {
         subtitleServices={services}
       />
       <ImageViewer img={homeImages} />
-      <Splitter
-        icon={<IoCompassOutline />}
-        title="Posti da visitare"
-        subtitle="Cosa vedere a Gravina in puglia"
-      />
-      <Splitter
-        icon={<IoCompassOutline />}
-        title="STRUTTURE CONVENZIONATE"
-        subtitle="Cosa vedere a Gravina in puglia"
-      />
+      <div id="places-slideshow">
+        <Splitter
+          icon={<IoCompassOutline />}
+          title="Posti da visitare"
+          subtitle="Cosa vedere a Gravina in puglia"
+        />
+      </div>
+      <div id="location">
+        <Splitter
+          icon={<IoCompassOutline />}
+          title="Dove siamo"
+          subtitle="Via Giudice Montea 3, 70024 Gravina in Puglia, Italia"
+        />
+      </div>
+      <div id="contacts">
+        <Splitter
+          icon={<IoCompassOutline />}
+          title="Contattaci"
+          subtitle="Compila il form qui sotto. In alternativa, contattaci al +393358237988 o scrivi a ilBelvedere@gmail.com"
+        />
+      </div>
     </>
   );
 };

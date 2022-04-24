@@ -1,13 +1,13 @@
-import "./TopBar.css";
+import "./Footer.css";
 import { HiOutlineHome } from "react-icons/hi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlinePhotograph } from "react-icons/hi";
 import logoHome from "../Assets/Image/logoHomeWhiteSmall.png";
 import { AiOutlinePhone } from "react-icons/ai";
 
-const TopBar = () => {
+const Footer = () => {
   return (
-    <div className="top-bar">
+    <div className="footer">
       <img alt="logo" src={logoHome} />
       <div className="info">
         <HiOutlineHome />
@@ -25,7 +25,7 @@ const TopBar = () => {
         <AiOutlinePhone />
         <a href="#contacts">Contattaci</a>
       </div>
-      {/* <div className="info">
+      <div className="info">
         <AiOutlinePhone />
         <a
           target="_blank"
@@ -33,8 +33,7 @@ const TopBar = () => {
         >
           punto panoramico vicino
         </a>
-      </div> */}
-
+      </div>
       {/* <div className="info">
         <AiOutlinePhone />
         <a href="callto:3281349208">Cell.: (+39) 328 1349208</a>
@@ -56,4 +55,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default Footer;

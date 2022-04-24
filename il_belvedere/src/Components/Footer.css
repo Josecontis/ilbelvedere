@@ -1,4 +1,4 @@
-.top-bar {
+.footer {
     height: 70px;
     background-color: #425141;
     display: flex;
@@ -44,7 +44,7 @@
 
 
 .info {
-    margin-left: 9%;
+    margin-left: 4%;
     height: 18px;
     display: flex;
     align-items: center;

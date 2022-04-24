@@ -46,14 +46,14 @@ const App = () => {
         >
           <AiOutlineWhatsApp />
         </a>
-        <button
-          className="button-to-top"
-          onClick={topFunction}
-          id="myBtn"
-          title="Go to top"
-        >
-          <IoIosArrowUp />
-        </button>
+          <button
+            className="button-to-top"
+            onClick={topFunction}
+            id="myBtn"
+            title="Go to top"
+          >
+            <IoIosArrowUp />
+          </button>
       </div>
     </>
   );
