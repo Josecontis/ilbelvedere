@@ -39,6 +39,7 @@ const App = () => {
           className="watsapp-button"
           data-action="open"
           data-phone="222"
+          rel="noreferrer"
           data-message="Salve! La contatto per maggiori informazioni"
           href="https://web.whatsapp.com/send?phone=222&amp;text=Salve! La contatto per maggiori informazioni"
           target="_blank"

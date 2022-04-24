@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .splitter-container::before {
@@ -45,6 +46,7 @@
     font-size: 32px;
     margin-top: 20px;
     font-weight: 600;
+    color: #425141;
 }
 
 .splitter-subtitle {
@@ -53,4 +55,26 @@
     color: #9c9c9c;
 }
 
-.splitter-subtitle-services {}
+.splitter-subtitle-services {
+    height: 300px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services {
+    width: 20%;
+    font-size: 20px;
+    display: grid;
+    color: #425141;
+    font-weight: 600;
+    align-items: center;
+}
+
+.services svg {
+    margin: 0 auto;
+    color: #8fb98a;
+    font-size: 50px;
+}

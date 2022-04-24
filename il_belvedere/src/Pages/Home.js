@@ -4,6 +4,12 @@ import bedImg from "../Assets/Image/336261885crop.jpg";
 import bathImg from "../Assets/Image/342667958crop.jpg";
 import Splitter from "../Components/Splitter";
 import { IoBedOutline, IoCompassOutline } from "react-icons/io5";
+import { RiComputerFill } from "react-icons/ri";
+import { AiFillEye } from "react-icons/ai";
+import { GiBoatPropeller } from "react-icons/gi";
+import { BsDoorClosedFill, BsSafe2Fill } from "react-icons/bs";
+import { MdDryCleaning, MdLocalLaundryService, MdLuggage } from "react-icons/md";
+import { FaWifi, FaShower } from "react-icons/fa";
 import ImageViewer from "../Components/ImageViewer";
 
 const Home = () => {
@@ -35,20 +41,44 @@ const Home = () => {
 
   const services = [
     {
-      icon: "",
+      icon: <GiBoatPropeller />,
       label: "Aria condizionata",
     },
     {
-      icon: "",
-      label: "Frigorifero",
+      icon: <FaShower />,
+      label: "Bagno con doccia e asciugacapelli",
     },
     {
-      icon: "",
+      icon: <MdDryCleaning />,
+      label: "Biancheria da letto e da bagno",
+    },
+    {
+      icon: <FaWifi />,
       label: "Free WI-FI",
     },
     {
-      icon: "",
+      icon: <RiComputerFill />,
       label: "Tv LCD",
+    },
+    {
+      icon: <BsDoorClosedFill />,
+      label: "Ingresso indipendente",
+    },
+    {
+      icon: <AiFillEye />,
+      label: "Vista panormaica",
+    },
+    {
+      icon: <MdLocalLaundryService />,
+      label: "Pulizie giornaliere",
+    },
+    {
+      icon: <BsSafe2Fill />,
+      label: "Cassaforte",
+    },
+    {
+      icon: <MdLuggage />,
+      label: "Deposito bagagli",
     },
   ];
 
