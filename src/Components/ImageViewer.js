@@ -1,17 +1,14 @@
 import "./ImageViewer.css";
 
 const ImageViewer = ({ img }) => {
-  function showing() {
+
+  function showing(el) {
     document.querySelector("#full-image") &&
-      document
-        .querySelector("#full-image")
-        .setAttribute(
-          "src",
-          document.querySelector(".images img") &&
-            document.querySelector(".images img").getAttribute("src")
-        );
-    document.getElementById("image-viewer").style.display = "block";
+      document.querySelector("#full-image").setAttribute("src", el);
+    if (document.getElementById("image-viewer"))
+      document.getElementById("image-viewer").style.display = "block";
   }
+
   function hiding() {
     document.getElementById("image-viewer").style.display = "none";
   }
@@ -22,11 +19,11 @@ const ImageViewer = ({ img }) => {
         {img.map((el, index) => (
           <img
             key={index}
-            onClick={showing}
+            onClick={()=>showing(el)}
             src={el}
             alt=""
-            width="300"
-            height="200"
+            width="200"
+            height="300"
           />
         ))}
       </div>

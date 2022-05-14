@@ -1,6 +1,7 @@
 import "./Home.css";
 import coffeImg from "../Assets/Image/352260130crop.jpg";
 import bedImg from "../Assets/Image/336261885crop.jpg";
+import img from "../Assets/Image/352259719.jpg";
 import bathImg from "../Assets/Image/342667958crop.jpg";
 import Splitter from "../Components/Splitter";
 import { IoBedOutline, IoCompassOutline } from "react-icons/io5";
@@ -90,7 +91,7 @@ const Home = () => {
     },
   ];
 
-  const homeImages = [bedImg, bedImg];
+  const homeImages = [bedImg, img];
   return (
     <>
       <div className="slideshow-container">
