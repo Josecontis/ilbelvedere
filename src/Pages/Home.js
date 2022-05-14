@@ -1,8 +1,8 @@
 import "./Home.css";
-import coffeImg from "../Assets/Image/352260130crop.jpg";
-import bedImg from "../Assets/Image/336261885crop.jpg";
-import img from "../Assets/Image/352259719.jpg";
-import bathImg from "../Assets/Image/342667958crop.jpg";
+import coffeImg from "../Assets/cropped/352260130crop.jpg";
+import bedImg from "../Assets/cropped/336261885crop.jpg";
+import img from "../Assets/multiview/352259719.jpg";
+import bathImg from "../Assets/cropped/342667958crop.jpg";
 import Splitter from "../Components/Splitter";
 import { IoBedOutline, IoCompassOutline } from "react-icons/io5";
 import { RiComputerFill } from "react-icons/ri";
@@ -120,10 +120,12 @@ const Home = () => {
         <div className="mySlides fade">
           <img alt="bath" src={bathImg} style={{ width: "100%" }} />
           <div className="review-label-bath">
-            Eccezionale.
+            Non abbiamo mai soggiornato in un ambiente così pulito e curato nei
+            dettagli! tutto impeccabile dalla A alla Z. accoglienza e
+            disponibilità assuluta ci ritorneremo sicuramente
             <br />
             <div className="review-author-bath">
-              (Sansone - Booking.com 10/10)
+              (Simona - Booking.com 10/10)
             </div>
           </div>
         </div>
