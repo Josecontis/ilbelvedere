@@ -12,6 +12,8 @@
 .images {
     justify-content: space-evenly;
     display: flex;
+    gap: 20px 22px;
+    flex-wrap: wrap;
 }
 
 /* The Modal (background) */
