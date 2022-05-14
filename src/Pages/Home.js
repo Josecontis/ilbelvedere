@@ -20,6 +20,13 @@ import img2 from "../Assets/multiview/277526957_109031591767400_1756184234998720
 import img3 from "../Assets/multiview/352259783.jpg";
 import img1 from "../Assets/multiview/336253142.jpg";
 
+import imgPlaces6 from "../Assets/places/352260652.jpg";
+import imgPlaces5 from "../Assets/places/352260652.jpg";
+import imgPlaces4 from "../Assets/places/352260654.jpg";
+import imgPlaces3 from "../Assets/places/352277259.jpg";
+import imgPlaces2 from "../Assets/places/352014867.jpg";
+import imgPlaces1 from "../Assets/places/351791653.jpg";
+
 import bathImg from "../Assets/cropped/342667958crop.jpg";
 import Splitter from "../Components/Splitter";
 import { IoBedOutline, IoCompassOutline } from "react-icons/io5";
@@ -129,6 +136,16 @@ const Home = () => {
     img17,
     img18,
   ];
+
+  const placeImages = [
+    imgPlaces1,
+    imgPlaces2,
+    imgPlaces3,
+    imgPlaces4,
+    imgPlaces5,
+    imgPlaces6,
+  ];
+
   return (
     <>
       <div className="slideshow-container">
@@ -166,7 +183,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         <div className="dot-container">
           <span className="dot"></span>
           <span className="dot"></span>
@@ -185,7 +201,9 @@ const Home = () => {
           icon={<IoCompassOutline />}
           title="Posti da visitare"
           subtitle="Cosa vedere a Gravina in puglia"
+          hasButton={true}
         />
+        <ImageViewer img={placeImages} />
       </div>
       <div id="location">
         <Splitter
@@ -198,7 +216,13 @@ const Home = () => {
         <Splitter
           icon={<IoCompassOutline />}
           title="Contattaci"
-          subtitle="Compila il form qui sotto. In alternativa, contattaci al +393358237988 o scrivi a ilBelvedere@gmail.com"
+          subtitle={
+            <div>
+              Compila il form qui sotto. In alternativa, contattaci al{" "}
+              <a href="callto:3281349208">Cell.: (+39) 328 1349208</a> o scrivi
+              a <a href="mailto:ilBelvedere@gmail.com">ilBelvedere@gmail.com</a>
+            </div>
+          }
         />
       </div>
     </>

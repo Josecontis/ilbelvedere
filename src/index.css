@@ -4,3 +4,12 @@ body {
   user-select: none;
 }
 
+a {
+  color: #8fb98a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #425141;
+}

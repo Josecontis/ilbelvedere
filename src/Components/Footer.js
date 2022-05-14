@@ -34,14 +34,6 @@ const Footer = () => {
           punto panoramico vicino
         </a>
       </div>
-      {/* <div className="info">
-        <AiOutlinePhone />
-        <a href="callto:3281349208">Cell.: (+39) 328 1349208</a>
-      </div>
-      <div className="info">
-        <HiOutlineMail />
-        <a href="mailto:ilBelvedere@gmail.com">ilBelvedere@gmail.com</a>
-      </div> */}
       <button>
         <a
           rel="noreferrer"
