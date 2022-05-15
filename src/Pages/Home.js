@@ -40,8 +40,8 @@ import {
   MdLuggage,
 } from "react-icons/md";
 import { FaWifi, FaShower } from "react-icons/fa";
-import ImageViewer from "../Components/ImageViewer";
 import { useEffect } from "react";
+import { ImageView2 } from "../Components/ImageView2";
 
 const Home = () => {
   let slideIndex = 0;
@@ -195,7 +195,7 @@ const Home = () => {
         subtitle="Tutte le nostre camere sono arredate con gusto, eleganza e dotate di:"
         subtitleServices={services}
       />
-      <ImageViewer img={homeImages} />
+      <ImageView2 img={homeImages} />
       <div id="places-slideshow">
         <Splitter
           icon={<IoCompassOutline />}
@@ -203,7 +203,6 @@ const Home = () => {
           subtitle="Cosa vedere a Gravina in puglia"
           hasButton={true}
         />
-        <ImageViewer img={placeImages} />
       </div>
       <div id="location">
         <Splitter
