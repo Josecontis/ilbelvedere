@@ -1,7 +1,7 @@
-import "./ImageView2.css";
+import "./ImageViewer.css";
 import { IoClose } from "react-icons/io5";
 
-export const ImageView2 = ({ img }) => {
+export const ImageViewer = ({ img }) => {
   function openModal() {
     document.getElementById("image-viewer").style.display = "block";
   }

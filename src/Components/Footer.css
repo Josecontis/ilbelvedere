@@ -1,4 +1,4 @@
-.footer {
+.top-bar {
     height: 70px;
     background-color: #425141;
     display: flex;
@@ -8,56 +8,4 @@
     position: fixed;
     z-index: 99;
     box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
-}
-
-.top-bar img {
-    height: 50px;
-    margin-left: 4%;
-}
-
-.top-bar img:hover {
-    transform: scale(1.1);
-}
-
-
-.top-bar button {
-    height: 100%;
-    width: 170px;
-    border: none;
-    background-color: #8fb98a;
-    color: #ffffff;
-    font-size: 16px;
-    margin-left: auto;
-    transition-duration: 1s;
-}
-
-.top-bar button a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.top-bar button:hover {
-    background-color: #363636;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-
-.info {
-    margin-left: 4%;
-    height: 18px;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.info svg {
-    color: #8fb98a;
-    font-size: 18px;
-}
-
-.info a:hover {
-    color: #8fb98a;
-    cursor: pointer;
 }

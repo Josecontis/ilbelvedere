@@ -42,7 +42,8 @@ import {
 } from "react-icons/md";
 import { FaWifi, FaShower } from "react-icons/fa";
 import { useEffect } from "react";
-import { ImageView2 } from "../Components/ImageView2";
+import { ImageViewer } from "../Components/ImageViewer";
+import { Footer } from "../Components/Footer";
 
 const Home = () => {
   let slideIndex = 0;
@@ -101,7 +102,7 @@ const Home = () => {
     },
     {
       icon: <AiFillEye />,
-      label: "Vista panormaica",
+      label: "Vista panormica",
     },
     {
       icon: <MdLocalLaundryService />,
@@ -196,7 +197,7 @@ const Home = () => {
         subtitle="Tutte le nostre camere sono arredate con gusto, eleganza e dotate di:"
         subtitleServices={services}
       />
-      <ImageView2 img={homeImages} />
+      <ImageViewer img={homeImages} />
       <div id="places-slideshow" style={{ paddingTop: "40px" }}>
         <Splitter
           icon={<IoCompassOutline />}
@@ -242,7 +243,29 @@ const Home = () => {
             </div>
           }
         />
+        <div className="form-contacts-container">
+          <div>
+            <div className="name-form">
+              <label className="form-label">Name</label>
+              <input className="form-input" />
+            </div>
+            <div className="email-form">
+              <label className="form-label">E-mail</label>
+              <input className="form-input" />
+            </div>
+          </div>
+          <div className="subject-form">
+            <label className="form-label">Subject</label>
+            <input className="form-input" />
+          </div>
+          <div className="message-form">
+            <label className="form-label">Message</label>
+            <input className="form-text-area" />
+          </div>
+          <button className="form-button">Invia</button>
+        </div>
       </div>
+      <Footer />
     </>
   );
 };
