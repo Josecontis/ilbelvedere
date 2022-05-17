@@ -1,4 +1,6 @@
 import "./ImageView2.css";
+import { IoClose } from "react-icons/io5";
+
 export const ImageView2 = ({ img }) => {
   function openModal() {
     document.getElementById("image-viewer").style.display = "block";
@@ -41,7 +43,7 @@ export const ImageView2 = ({ img }) => {
           src={el}
           onClick={() => {
             openModal();
-            currentSlide(index);
+            currentSlide(index + 1);
           }}
           alt=""
           width="200"
@@ -51,9 +53,9 @@ export const ImageView2 = ({ img }) => {
 
       <div id="image-viewer" className="modal">
         <div className="modal-content">
-          <span className="modal-close" onClick={() => closeModal()}>
-            &times;
-          </span>
+          <div className="modal-close" onClick={() => closeModal()}>
+            <IoClose />
+          </div>
           {img.map((elm, idx) => (
             <div className="slides">
               <div className="numbertext">

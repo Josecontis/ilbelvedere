@@ -11,7 +11,7 @@
 .splitter-container::before {
     content: "";
     position: absolute;
-    bottom: 83%;
+    top: 20px;
     right: 20px;
     border-width: 0;
     width: 47%;
@@ -23,7 +23,7 @@
 .splitter-container::after {
     content: "";
     position: absolute;
-    bottom: 83%;
+    top: 20px;
     left: 20px;
     border-width: 0;
     width: 47%;
