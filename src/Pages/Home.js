@@ -206,6 +206,7 @@ const Home = () => {
           hasButton={true}
         />
       </div>
+      <ImageViewer img={placeImages} />
       <div id="location" style={{ paddingTop: "40px" }}>
         <Splitter
           icon={<IoCompassOutline />}
@@ -226,7 +227,6 @@ const Home = () => {
           frameborder="0"
           allowfullscreen=""
           loading="lazy"
-          icon={bathImg}
           output="embed"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
