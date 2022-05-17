@@ -61,7 +61,7 @@ export const ImageViewer = ({ img }) => {
               <div className="numbertext">
                 {idx + 1}/ {img.length}
               </div>
-              <img src={elm} />
+              <img src={elm} alt="" />
             </div>
           ))}
           <a className="prev-img" onClick={() => plusSlides(-1)}>
