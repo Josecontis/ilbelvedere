@@ -2,6 +2,7 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 import { IoIosArrowUp } from "react-icons/io";
 
 import "./App.css";
+import { Footer } from "./Components/Footer";
 import TopBar from "./Components/TopBar";
 import Home from "./Pages/Home";
 
@@ -46,15 +47,16 @@ const App = () => {
         >
           <AiOutlineWhatsApp />
         </a>
-          <button
-            className="button-to-top"
-            onClick={topFunction}
-            id="myBtn"
-            title="Go to top"
-          >
-            <IoIosArrowUp />
-          </button>
+        <button
+          className="button-to-top"
+          onClick={topFunction}
+          id="myBtn"
+          title="Go to top"
+        >
+          <IoIosArrowUp />
+        </button>
       </div>
+      <Footer />
     </>
   );
 };

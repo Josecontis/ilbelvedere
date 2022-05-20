@@ -239,8 +239,11 @@ const Home = () => {
           subtitle={
             <div>
               Compila il form qui sotto. In alternativa, contattaci al{" "}
-              <a href="callto:3281349208">Cell.: (+39) 328 1349208</a> o scrivi
-              a <a href="mailto:ilBelvedere@gmail.com">ilBelvedere@gmail.com</a>
+              <a href="callto:3275777844">Cell.: (+39) 327 577 7844</a> o scrivi
+              a{" "}
+              <a href="mailto:ilbelvederegravina@outlook.it">
+                ilbelvederegravina@outlook.it
+              </a>
             </div>
           }
         />
@@ -266,7 +269,6 @@ const Home = () => {
           <button className="form-button">Invia</button>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
