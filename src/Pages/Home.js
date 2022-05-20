@@ -44,6 +44,7 @@ import { FaWifi, FaShower } from "react-icons/fa";
 import { useEffect } from "react";
 import { ImageViewer } from "../Components/ImageViewer";
 import { Footer } from "../Components/Footer";
+import { useTranslation, Trans } from "react-i18next";
 
 const Home = () => {
   let slideIndex = 0;
@@ -51,6 +52,8 @@ const Home = () => {
   useEffect(() => {
     showSlides();
   });
+  const { t } = useTranslation();
+
 
   function showSlides() {
     let i = 0;
@@ -114,7 +117,7 @@ const Home = () => {
     },
     {
       icon: <MdLuggage />,
-      label: "Deposito bagagli",
+      label: t("common.bagage"),
     },
   ];
 

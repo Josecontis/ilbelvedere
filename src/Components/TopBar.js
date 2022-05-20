@@ -4,10 +4,19 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiOutlinePhotograph } from "react-icons/hi";
 import logoHome from "../Assets/logo/logoHomeWhiteSmall.png";
 import { AiOutlinePhone } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const TopBar = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div className="top-bar">
+      <button onClick={() => changeLanguage("en")}>english</button>
+      <button onClick={() => changeLanguage("it")}>italian</button>
       <img alt="logo" src={logoHome} />
       <div className="info">
         <HiOutlineHome />

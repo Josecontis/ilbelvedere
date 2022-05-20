@@ -5,6 +5,7 @@ import "./App.css";
 import { Footer } from "./Components/Footer";
 import TopBar from "./Components/TopBar";
 import Home from "./Pages/Home";
+import "./translations/i18next";
 
 const App = () => {
   // When the user scrolls down 20px from the top of the document, show the button
