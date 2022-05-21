@@ -19,8 +19,8 @@ export const Footer = () => {
             height="60"
             style={{ border: "none", overflow: "hidden" }}
             scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
+            frameBorder="0"
+            allowFullScreen=""
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
         </div>

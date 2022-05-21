@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./Splitter.css";
+import { InfoModal } from "./InfoModal";
 
 const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
+  const [infoModal, setInfoModal] = useState("");
   return (
     <div className="splitter-container">
       <div className="splitter-bar">{icon}</div>
@@ -23,13 +26,20 @@ const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
 
       <div className="splitter-subtitle">{subtitle}</div>
       {subtitleServices && (
-        <div className="splitter-subtitle-services">
+        <div
+          className="splitter-subtitle-services"
+         
+        >
           {subtitleServices.map((el, index) => (
-            <div key={index} className="services">
+            <div key={index} className="services" onClick={() => setInfoModal(el.label)}>
               {el.icon}
               {el.label}
             </div>
           ))}
+          <InfoModal
+            closeAction={() => setInfoModal("")}
+            title={infoModal}
+          />
         </div>
       )}
     </div>

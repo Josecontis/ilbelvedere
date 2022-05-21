@@ -104,6 +104,10 @@
     align-items: center;
 }
 
+.services:hover {
+    cursor: pointer;
+}
+
 .services svg {
     margin: 0 auto;
     color: #8fb98a;

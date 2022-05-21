@@ -54,7 +54,6 @@ const Home = () => {
   });
   const { t } = useTranslation();
 
-
   function showSlides() {
     let i = 0;
     let slides = document.getElementsByClassName("mySlides");
@@ -228,11 +227,11 @@ const Home = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.446977623438!2d16.4111989654082!3d40.818144829320566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13387ba0607a842f%3A0xfbeb000071a1ac0c!2sIl%20Belvedere%20casa%20vacanze%20a%20Gravina%20in%20Puglia%20(Ba)!5e0!3m2!1sen!2sit!4v1652805766745!5m2!1sen!2sit"
           width="1400"
           height="400"
-          frameborder="0"
-          allowfullscreen=""
+          frameBorder="0"
+          allowFullScreen=""
           loading="lazy"
           output="embed"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
       <div id="contacts" style={{ paddingTop: "40px" }}>
