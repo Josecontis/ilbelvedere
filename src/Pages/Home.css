@@ -225,7 +225,8 @@ img {
     border: none;
     color: #fff;
     background-color: #8fb98a;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: 600;
     padding: 12px;
     border-radius: 5px;
     margin-bottom: 30px;

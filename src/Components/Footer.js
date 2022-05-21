@@ -1,16 +1,16 @@
 import "./Footer.css";
 import logoHome from "../Assets/logo/logoHomeWhiteSmall.png";
-import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
+
 export const Footer = () => {
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
   return (
     <div className="footer">
       <div className="footer-logo">
         <img alt="logo" src={logoHome} />
       </div>
-      <div className="footer-info">
-        Il Belvedere casa vacanze Via Giudice Montea, 70024 Gravina in Puglia BA
-      </div>
+      <div className="footer-info">{t("footer.title")}</div>
       <div className="footer-sites">
         <div style={{ float: "left" }}>
           <iframe
@@ -29,7 +29,7 @@ export const Footer = () => {
           Email: <span>ilbelvederegravina@outlook.it</span>
         </div>
       </div>
-      <div className="footer-copy">{`©${year} Tutti i diritti riservati | Bed & Breakfast IL BELVEDERE`}</div>
+      <div className="footer-copy">{`©${year} ${t("footer.cpyr")}`}</div>
     </div>
   );
 };

@@ -1,9 +1,51 @@
 {
-  "common": {
-    "bagage": "Bagagli",
-    "cancel": "Cancel",
-    "save": "Save",
-    "na": "N/A",
-    "noFound": "No "
+  "services": {
+    "air": "Aria condizionata",
+    "bath": "Bagno con doccia e asciugacapelli",
+    "towel": "Biancheria da letto e da bagno",
+    "wifi": "WI-FI gratuito",
+    "tv": "Tv LCD",
+    "entry": "Ingresso indipendente",
+    "view": "Vista panormica",
+    "clean": "Pulizie giornaliere",
+    "safe": "Cassaforte",
+    "bagage": "Bagagli"
+  },
+  "imgSlider": {
+    "welcome": "Benvenuti",
+    "label": "Trascorri i tuoi momenti di relax al centro di gravina in puglia",
+    "subLabel": "L'appartamento è arredato con gusto ed eleganza",
+    "reviewCoffe": "Tutto perfetto. La posizione nelle immediate vicinanze del ponte e a pochi passi dal centro un sogno. Era pulito, la padrona di casa è stata molto disponibile.",
+    "reviewBath": "Non abbiamo mai soggiornato in un ambiente così pulito e curato nei dettagli! tutto impeccabile dalla A alla Z. accoglienza e disponibilità assuluta ci ritorneremo sicuramente"
+  },
+  "splitter": {
+    "servicesTitle": "Servizi",
+    "servicesSubTitle": "Tutte le nostre camere sono arredate con gusto, eleganza e dotate di",
+    "placesTitle": "Posti da visitare",
+    "placesSubTitle": "Cosa vedere a Gravina in puglia",
+    "locationTitle": "Dove siamo",
+    "locationSubTitle": "Via Giudice Montea 3, 70024 Gravina in Puglia, Italia",
+    "contactsTitle": "Contatti",
+    "contactsSubTitle1": "Compila il form qui sotto. In alternativa, contattaci al ",
+    "contactsSubTitle2": "o scrivi a ",
+    "button": "punto panoramico vicino"
+  },
+  "contacts": {
+    "name": "Nome",
+    "email": "E-Mail",
+    "object": "Oggetto",
+    "message": "Messaggio",
+    "send": "Invia"
+  },
+  "topBar": {
+    "home": "Home",
+    "places": "Itinerari",
+    "location": "Dove siamo",
+    "contacts": "Contattaci",
+    "book": "Prenota"
+  },
+  "footer": {
+    "title": "Il Belvedere casa vacanze Via Giudice Montea, 70024 Gravina in Puglia BA",
+    "cpyr": "Tutti i diritti riservati | Bed & Breakfast IL BELVEDERE"
   }
 }

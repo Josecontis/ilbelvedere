@@ -80,43 +80,43 @@ const Home = () => {
   const services = [
     {
       icon: <GiBoatPropeller />,
-      label: "Aria condizionata",
+      label: t("services.air"),
     },
     {
       icon: <FaShower />,
-      label: "Bagno con doccia e asciugacapelli",
+      label: t("services.bath"),
     },
     {
       icon: <MdDryCleaning />,
-      label: "Biancheria da letto e da bagno",
+      label: t("services.towel"),
     },
     {
       icon: <FaWifi />,
-      label: "Free WI-FI",
+      label: t("services.wifi"),
     },
     {
       icon: <RiComputerFill />,
-      label: "Tv LCD",
+      label: t("services.tv"),
     },
     {
       icon: <BsDoorClosedFill />,
-      label: "Ingresso indipendente",
+      label: t("services.entry"),
     },
     {
       icon: <AiFillEye />,
-      label: "Vista panormica",
+      label: t("services.view"),
     },
     {
       icon: <MdLocalLaundryService />,
-      label: "Pulizie giornaliere",
+      label: t("services.clean"),
     },
     {
       icon: <BsSafe2Fill />,
-      label: "Cassaforte",
+      label: t("services.safe"),
     },
     {
       icon: <MdLuggage />,
-      label: t("common.bagage"),
+      label: t("services.bagage"),
     },
   ];
 
@@ -155,20 +155,14 @@ const Home = () => {
       <div className="slideshow-container">
         <div className="mySlides fade">
           <img alt="env" src={bedImg} style={{ width: "100%" }} />
-          <div className="welcome-text">Benvenuti</div>
-          <div className="label">
-            Trascorri i tuoi momenti di relax al centro di gravina in puglia
-          </div>
-          <div className="sub-label">
-            L'appartamento è arredato con gusto ed eleganza
-          </div>
+          <div className="welcome-text">{t("imgSlider.welcome")}</div>
+          <div className="label">{t("imgSlider.label")}</div>
+          <div className="sub-label">{t("imgSlider.subLabel")}</div>
         </div>
         <div className="mySlides fade">
           <img alt="bed" src={coffeImg} style={{ width: "100%" }} />
           <div className="review-label-coffe">
-            Tutto perfetto. La posizione nelle immediate vicinanze del ponte e a
-            pochi passi dal centro un sogno. Era pulito, la padrona di casa è
-            stata molto disponibile.
+            {t("imgSlider.reviewCoffe")}
             <br />
             <div className="review-author-coffe">
               (Veronika - Booking.com 10/10)
@@ -178,9 +172,7 @@ const Home = () => {
         <div className="mySlides fade">
           <img alt="bath" src={bathImg} style={{ width: "100%" }} />
           <div className="review-label-bath">
-            Non abbiamo mai soggiornato in un ambiente così pulito e curato nei
-            dettagli! tutto impeccabile dalla A alla Z. accoglienza e
-            disponibilità assuluta ci ritorneremo sicuramente
+            {t("imgSlider.reviewBath")}
             <br />
             <div className="review-author-bath">
               (Simona - Booking.com 10/10)
@@ -195,16 +187,16 @@ const Home = () => {
       </div>
       <Splitter
         icon={<IoBedOutline />}
-        title="servizi"
-        subtitle="Tutte le nostre camere sono arredate con gusto, eleganza e dotate di:"
+        title={t("splitter.servicesTitle")}
+        subtitle={t("splitter.servicesSubTitle")}
         subtitleServices={services}
       />
       <ImageViewer img={homeImages} />
       <div id="places-slideshow" style={{ paddingTop: "40px" }}>
         <Splitter
           icon={<IoCompassOutline />}
-          title="Posti da visitare"
-          subtitle="Cosa vedere a Gravina in puglia"
+          title={t("splitter.placesTitle")}
+          subtitle={t("splitter.placesSubTitle")}
           hasButton={true}
         />
       </div>
@@ -212,8 +204,8 @@ const Home = () => {
       <div id="location" style={{ paddingTop: "40px" }}>
         <Splitter
           icon={<IoCompassOutline />}
-          title="Dove siamo"
-          subtitle="Via Giudice Montea 3, 70024 Gravina in Puglia, Italia"
+          title={t("splitter.locationTitle")}
+          subtitle={t("splitter.locationSubTitle")}
         />
         <img
           src={gravImg}
@@ -237,12 +229,12 @@ const Home = () => {
       <div id="contacts" style={{ paddingTop: "40px" }}>
         <Splitter
           icon={<IoCompassOutline />}
-          title="Contattaci"
+          title={t("splitter.contactsTitle")}
           subtitle={
             <div>
-              Compila il form qui sotto. In alternativa, contattaci al{" "}
-              <a href="callto:3275777844">Cell.: (+39) 327 577 7844</a> o scrivi
-              a{" "}
+              {t("splitter.contactsSubTitle1")}
+              <a href="callto:3275777844">Cell.: (+39) 327 577 7844</a>{" "}
+              {t("splitter.contactsSubTitle2")}
               <a href="mailto:ilbelvederegravina@outlook.it">
                 ilbelvederegravina@outlook.it
               </a>
@@ -252,23 +244,23 @@ const Home = () => {
         <div className="form-contacts-container">
           <div>
             <div className="name-form">
-              <label className="form-label">Name</label>
+              <label className="form-label">{t("contacts.name")}</label>
               <input className="form-input" />
             </div>
             <div className="email-form">
-              <label className="form-label">E-mail</label>
+              <label className="form-label">{t("contacts.email")}</label>
               <input className="form-input" />
             </div>
           </div>
           <div className="subject-form">
-            <label className="form-label">Subject</label>
+            <label className="form-label">{t("contacts.object")}</label>
             <input className="form-input" />
           </div>
           <div className="message-form">
-            <label className="form-label">Message</label>
+            <label className="form-label">{t("contacts.message")}</label>
             <input className="form-text-area" />
           </div>
-          <button className="form-button">Invia</button>
+          <button className="form-button">{t("contacts.send")}</button>
         </div>
       </div>
     </>

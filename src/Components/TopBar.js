@@ -23,19 +23,19 @@ const TopBar = () => {
         <img alt="logo" src={logoHome} />
         <div className="info">
           <HiOutlineHome />
-          <a href="/">Home</a>
+          <a href="/">{t("topBar.home")}</a>
         </div>
         <div className="info">
           <HiOutlinePhotograph />
-          <a href="#places-slideshow">Itinerari</a>
+          <a href="#places-slideshow">{t("topBar.places")}</a>
         </div>
         <div className="info">
           <HiOutlineLocationMarker />
-          <a href="#location">Dove Siamo</a>
+          <a href="#location">{t("topBar.location")}</a>
         </div>
         <div className="info">
           <AiOutlinePhone />
-          <a href="#contacts">Contattaci</a>
+          <a href="#contacts">{t("topBar.contacts")}</a>
         </div>
         <button>
           <a
@@ -43,12 +43,13 @@ const TopBar = () => {
             href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
             target="_blank"
           >
-            PRENOTA
+            {t("topBar.book")}
           </a>
         </button>
       </div>
       <div className="button-translation">
         <button
+          title="Translate to english"
           onClick={() => {
             changeLanguage("en");
             setActive("en");
@@ -61,6 +62,7 @@ const TopBar = () => {
           />
         </button>
         <button
+          title="Translate to italian"
           onClick={() => {
             changeLanguage("it");
             setActive("it");
