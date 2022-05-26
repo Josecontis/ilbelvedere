@@ -45,6 +45,7 @@ import { useEffect } from "react";
 import { ImageViewer } from "../Components/ImageViewer";
 import { Footer } from "../Components/Footer";
 import { useTranslation, Trans } from "react-i18next";
+import { Contacts } from "../Components/Contacts";
 
 const Home = () => {
   let slideIndex = 0;
@@ -241,27 +242,7 @@ const Home = () => {
             </div>
           }
         />
-        <div className="form-contacts-container">
-          <div>
-            <div className="name-form">
-              <label className="form-label">{t("contacts.name")}</label>
-              <input className="form-input" />
-            </div>
-            <div className="email-form">
-              <label className="form-label">{t("contacts.email")}</label>
-              <input className="form-input" />
-            </div>
-          </div>
-          <div className="subject-form">
-            <label className="form-label">{t("contacts.object")}</label>
-            <input className="form-input" />
-          </div>
-          <div className="message-form">
-            <label className="form-label">{t("contacts.message")}</label>
-            <input className="form-text-area" />
-          </div>
-          <button className="form-button">{t("contacts.send")}</button>
-        </div>
+        <Contacts />
       </div>
     </>
   );
