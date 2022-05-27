@@ -1,0 +1,13 @@
+.alert-success {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #8fb98a;
+    color: white;
+}
+
+.alert-error {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #d7726a;
+    color: white;
+}

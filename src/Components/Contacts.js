@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import { t } from "i18next";
-import CustomAlert from "./Alert";
+import { AlertNotification } from "./AlertNotification";
 import "./Contacts.css";
 
 export const Contacts = () => {
@@ -21,27 +21,36 @@ export const Contacts = () => {
       reply_to: email,
     };
 
-    if (templateParams.from_email === "") setTestFlag(-1);
-    else {
-      setTestFlag(1);
-      emailjs.send(
+    emailjs
+      .send(
         "service_71tircc",
         "template_7iyx15d",
         templateParams,
         "YRrKkrPNpgyEoqK3o"
+      )
+      .then(
+        function (response) {
+          setTestFlag(1);
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          setTestFlag(-1);
+          console.log("FAILED...", error);
+        }
       );
-    }
+  };
+
+  const renderAlert = () => {
+    return testFlag === 1 ? (
+      <AlertNotification Success={true} />
+    ) : testFlag === -1 ? (
+      <AlertNotification Success={false} />
+    ) : null;
   };
 
   return (
     <div className="form-contacts-container">
-      {/* <div>
-        {testFlag === 1 ? (
-          <CustomAlert Success={true} />
-        ) : testFlag === -1 ? (
-          <CustomAlert Success={false} />
-        ) : null}
-      </div> */}
+      <div className="alert-container">{renderAlert()}</div>
       <div>
         <div className="name-form">
           <label className="form-label">{t("contacts.name")}</label>
@@ -82,7 +91,10 @@ export const Contacts = () => {
             ? "form-button"
             : "form-button-disabled"
         }
-        onClick={(e) => sendEmail(e)}
+        onClick={(e) => {
+          sendEmail(e);
+          renderAlert();
+        }}
       >
         {t("contacts.send")}
       </button>

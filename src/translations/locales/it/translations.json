@@ -47,5 +47,9 @@
   "footer": {
     "title": "Il Belvedere casa vacanze Via Giudice Montea, 70024 Gravina in Puglia BA",
     "cpyr": "Tutti i diritti riservati | Bed & Breakfast IL BELVEDERE"
+  },
+  "alert": {
+    "success": "E-MAIL INVIATA CORRETTAMENTE",
+    "error": "PROBLEMA NELL'INVIO DELL'E-MAIL"
   }
 }

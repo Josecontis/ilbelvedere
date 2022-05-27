@@ -2,6 +2,7 @@
   color: #000;
   width: 100%;
   text-align: left;
+  font-size: 14px;
 }
 
 .form-input {
@@ -98,4 +99,27 @@
 
 .form-button-disabled:hover {
   cursor: no-drop;
+}
+
+.alert-container {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  animation: slide-left 6s forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
