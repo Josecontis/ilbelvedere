@@ -5,41 +5,32 @@ import CustomAlert from "./Alert";
 import "./Contacts.css";
 
 export const Contacts = () => {
-  const [emailFlag, setEmailFlag] = useState(false);
-  const [nameFlag, setnameFlag] = useState(false);
-  const [txtFlag, setTxtFlag] = useState(false);
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [object, setObject] = useState("");
+  const [message, setMessage] = useState("");
   const [testFlag, setTestFlag] = useState(0);
 
-  const sendEmail = (e) => {
+  const sendEmail = () => {
     let templateParams = {
-      from_name: document.getElementById("name").value,
-      subject: document.getElementById("subject").value,
+      from_name: name,
+      subject: object,
       to_name: "ilbelvederegravina@gmail.com",
-      message_html: document.getElementById("message").value,
-      from_email: document.getElementById("email").value,
-      reply_to: document.getElementById("email").value,
+      message_html: message,
+      from_email: email,
+      reply_to: email,
     };
 
     if (templateParams.from_email === "") setTestFlag(-1);
     else {
       setTestFlag(1);
       emailjs.send(
-        "service_99az9cx",
-        "template_gvo47pi",
+        "service_71tircc",
+        "template_7iyx15d",
         templateParams,
-        "NbgnqDLtBnj2y-Hs4"
+        "YRrKkrPNpgyEoqK3o"
       );
     }
-  };
-
-  const emailConstraints = (content) => {
-    setEmailFlag(content.target.value !== "");
-  };
-  const nameConstraints = (content) => {
-    setnameFlag(content.target.value !== "");
-  };
-  const txtConstraints = (content) => {
-    setTxtFlag(content.target.value !== "");
   };
 
   return (
@@ -54,32 +45,43 @@ export const Contacts = () => {
       <div>
         <div className="name-form">
           <label className="form-label">{t("contacts.name")}</label>
-          <input id="name" className="form-input" onChange={nameConstraints} />
+          <input
+            id="name"
+            className="form-input"
+            onChange={(e) => setName(e.target.value)}
+          />
         </div>
         <div className="email-form">
           <label className="form-label">{t("contacts.email")}</label>
           <input
             id="email"
             className="form-input"
-            onChange={emailConstraints}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
       </div>
       <div className="subject-form">
         <label className="form-label">{t("contacts.object")}</label>
-        <input id="subject" className="form-input" />
+        <input
+          id="subject"
+          className="form-input"
+          onChange={(e) => setObject(e.target.value)}
+        />
       </div>
       <div className="message-form">
         <label className="form-label">{t("contacts.message")}</label>
-        <input
+        <textarea
           id="message"
           className="form-text-area"
-          onChange={txtConstraints}
+          onChange={(e) => setMessage(e.target.value)}
         />
       </div>
       <button
-        disabled={txtFlag && nameFlag && emailFlag}
-        className="form-button"
+        className={
+          name && email && object && message
+            ? "form-button"
+            : "form-button-disabled"
+        }
         onClick={(e) => sendEmail(e)}
       >
         {t("contacts.send")}

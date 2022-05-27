@@ -31,10 +31,10 @@
     "button": "viewpoint nearby"
   },
   "contacts": {
-    "name": "Name",
-    "email": "E-Mail",
-    "object": "Subject",
-    "message": "Message",
+    "name": "Name*",
+    "email": "E-Mail*",
+    "object": "Subject*",
+    "message": "Message*",
     "send": "Send"
   },
   "topBar": {

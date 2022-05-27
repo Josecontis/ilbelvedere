@@ -31,10 +31,10 @@
     "button": "punto panoramico vicino"
   },
   "contacts": {
-    "name": "Nome",
-    "email": "E-Mail",
-    "object": "Oggetto",
-    "message": "Messaggio",
+    "name": "Nome*",
+    "email": "E-Mail*",
+    "object": "Oggetto*",
+    "message": "Messaggio*",
     "send": "Invia"
   },
   "topBar": {

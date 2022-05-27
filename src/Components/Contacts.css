@@ -59,6 +59,10 @@
   text-align: left;
 }
 
+.message-form textarea {
+  resize: none;
+}
+
 .form-button {
   width: 100%;
   text-transform: uppercase;
@@ -76,4 +80,22 @@
 .form-button:hover {
   background-color: #363636;
   cursor: pointer;
+}
+
+.form-button-disabled {
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #8fb98a;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+.form-button-disabled:hover {
+  cursor: no-drop;
 }
