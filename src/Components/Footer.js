@@ -9,6 +9,10 @@ export const Footer = () => {
     <div className="footer">
       <div className="footer-logo">
         <img alt="logo" src={logoHome} />
+        <div className="booking-badge">
+          <span>Booking.com</span>
+          <div className="booking-rate">9.2</div>
+        </div>
       </div>
       <div className="footer-info">{t("footer.title")}</div>
       <div className="footer-sites">

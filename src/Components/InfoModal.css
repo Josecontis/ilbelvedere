@@ -1,9 +1,10 @@
 .info-modal {
-  width: 400px;
-  height: 300px;
-  position: absolute;
-  top: 33vh;
-  left: 33vw;
+  position: fixed;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 5px;
   background-color: white;
@@ -43,7 +44,7 @@
 
 .info-modal .title {
 
-  height: 40px;
+  height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;

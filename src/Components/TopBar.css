@@ -74,7 +74,7 @@
     height: 40px;
     margin-top: 70px;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     margin-left: 15px;
     justify-content: space-around;
     display: flex;
