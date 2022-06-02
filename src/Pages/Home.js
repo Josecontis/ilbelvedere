@@ -82,42 +82,62 @@ const Home = () => {
     {
       icon: <GiBoatPropeller />,
       label: t("services.air"),
+      description:
+        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
     },
     {
       icon: <FaShower />,
       label: t("services.bath"),
+      description:
+        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
     },
     {
       icon: <MdDryCleaning />,
       label: t("services.towel"),
+      description:
+        "Enjoy fresh linens and towels. Change daily upon request.",
     },
     {
       icon: <FaWifi />,
       label: t("services.wifi"),
+      description:
+        "Ospitalità, connessione e condivisione. Per questa ragione l’intera struttura è dotata di Wi-Fi libero per tutti gli ospiti.",
     },
     {
       icon: <RiComputerFill />,
       label: t("services.tv"),
+      description:
+        "Per un'esperienza di ospitalità davvero superiore, ogni camera è dotata di televisore digitale per offrire intrattenimento, svago e informazione.",
     },
     {
       icon: <BsDoorClosedFill />,
       label: t("services.entry"),
+      description:
+        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
     },
     {
       icon: <AiFillEye />,
       label: t("services.view"),
+      description:
+        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
     },
     {
       icon: <MdLocalLaundryService />,
       label: t("services.clean"),
+      description:
+        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
     },
     {
       icon: <BsSafe2Fill />,
       label: t("services.safe"),
+      description:
+        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
     },
     {
       icon: <MdLuggage />,
       label: t("services.bagage"),
+      description:
+        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
     },
   ];
 

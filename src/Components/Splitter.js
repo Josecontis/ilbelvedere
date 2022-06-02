@@ -4,7 +4,10 @@ import { InfoModal } from "./InfoModal";
 import { t } from "i18next";
 
 const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
-  const [infoModal, setInfoModal] = useState("");
+  const [infoModal, setInfoModal] = useState({
+    title: "title",
+    description: "desc",
+  });
   return (
     <div className="splitter-container">
       <div className="splitter-bar">{icon}</div>
@@ -27,19 +30,26 @@ const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
 
       <div className="splitter-subtitle">{subtitle}</div>
       {subtitleServices && (
-        <div
-          className="splitter-subtitle-services"
-         
-        >
+        <div className="splitter-subtitle-services">
           {subtitleServices.map((el, index) => (
-            <div key={index} className="services" onClick={() => setInfoModal(el.label)}>
+            <div
+              key={index}
+              className="services"
+              onClick={() =>
+                setInfoModal({
+                  title: el.label,
+                  description: el.description,
+                })
+              }
+            >
               {el.icon}
               {el.label}
             </div>
           ))}
           <InfoModal
             closeAction={() => setInfoModal("")}
-            title={infoModal}
+            title={infoModal.title}
+            description={infoModal.description}
           />
         </div>
       )}

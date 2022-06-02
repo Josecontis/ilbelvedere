@@ -8,6 +8,7 @@
   width: 60px;
   height: 60px;
   display: flex;
+  z-index: 2;
   align-items: center;
   justify-content: center;
   background-color: #075E54;
