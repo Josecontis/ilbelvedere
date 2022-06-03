@@ -1,0 +1,104 @@
+.card-images-places {
+  justify-content: space-around;
+  display: flex;
+  gap: 20px 22px;
+  flex-wrap: wrap;
+}
+
+.card-images-places img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 514px;
+}
+
+.card-images-places img:hover {
+  opacity: 0.7;
+}
+
+.card-images-places .slides-places img:hover {
+  opacity: 1;
+  cursor: default;
+}
+
+/* The Modal (background) */
+.modal-places {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content-places {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The Close Button */
+.modal-close-places {
+  color: #f2f2f2;
+  font-size: 34px;
+  font-weight: bold;
+  right: 0;
+  margin-right: 24px;
+  position: absolute;
+}
+
+.modal-close-places:hover,
+.modal-close-places:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev-img-places,
+.next-img-places {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  /* margin-top: -50px; */
+  color: #000;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next-img-places {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-img-places {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-img-places:hover,
+.next-img-places:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #999;
+}
+
+/* Number text (1/3 etc) */
+.numbertext-places {
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 24px;
+  position: absolute;
+}

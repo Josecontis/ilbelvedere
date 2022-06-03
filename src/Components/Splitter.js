@@ -4,10 +4,7 @@ import { InfoModal } from "./InfoModal";
 import { t } from "i18next";
 
 const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
-  const [infoModal, setInfoModal] = useState({
-    title: "title",
-    description: "desc",
-  });
+  const [infoModal, setInfoModal] = useState({});
   return (
     <div className="splitter-container">
       <div className="splitter-bar">{icon}</div>
@@ -47,7 +44,7 @@ const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
             </div>
           ))}
           <InfoModal
-            closeAction={() => setInfoModal("")}
+            closeAction={() => setInfoModal({})}
             title={infoModal.title}
             description={infoModal.description}
           />

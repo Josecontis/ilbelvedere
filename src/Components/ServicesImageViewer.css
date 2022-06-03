@@ -1,28 +1,28 @@
-.card-images {
+.card-images-services {
   justify-content: space-around;
   display: flex;
   gap: 20px 22px;
   flex-wrap: wrap;
 }
 
-.card-images img {
+.card-images-services img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
   max-width: 514px;
 }
 
-.card-images img:hover {
+.card-images-services img:hover {
   opacity: 0.7;
 }
 
-.card-images .slides img:hover {
+.card-images-services .slides-services img:hover {
   opacity: 1;
   cursor: default;
 }
 
 /* The Modal (background) */
-.modal {
+.modal-services {
   display: none;
   position: fixed;
   z-index: 3;
@@ -36,13 +36,13 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content-services {
   position: relative;
   margin: 0 auto;
 }
 
 /* The Close Button */
-.modal-close {
+.modal-close-services {
   color: #f2f2f2;
   font-size: 34px;
   font-weight: bold;
@@ -51,16 +51,16 @@
   position: absolute;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close-services:hover,
+.modal-close-services:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
 
 /* Next & previous buttons */
-.prev-img,
-.next-img {
+.prev-img-services,
+.next-img-services {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -77,25 +77,25 @@
   -webkit-user-select: none;
 }
 
-.next-img {
+.next-img-services {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev-img {
+.prev-img-services {
   left: 0;
   border-radius: 0 3px 3px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev-img:hover,
-.next-img:hover {
+.prev-img-services:hover,
+.next-img-services:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: #999;
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.numbertext-services {
   color: #f2f2f2;
   font-size: 16px;
   font-weight: bold;

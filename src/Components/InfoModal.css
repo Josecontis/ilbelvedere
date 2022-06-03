@@ -23,14 +23,14 @@
 }
 
 .info-modal-close {
-  height: 40px;
+  position: absolute;
+  height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
-  float: right;
-  width: 40px;
+  width: 58px;
+  left: 444px;
   font-size: 24px;
-
 }
 
 .info-modal-close:hover {
@@ -43,8 +43,9 @@
 }
 
 .info-modal .title {
-
-  height: 54px;
+  height: 58px;
+  margin: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
