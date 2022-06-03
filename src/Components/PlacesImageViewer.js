@@ -1,3 +1,6 @@
+import imgPlaces12 from "../Assets/places/352272261.jpg";
+import imgPlaces11 from "../Assets/places/353277262.jpg";
+import imgPlaces10 from "../Assets/places/335223262.jpg";
 import imgPlaces9 from "../Assets/places/352014815.jpg";
 import imgPlaces8 from "../Assets/places/352014814.jpg";
 import imgPlaces7 from "../Assets/places/352014813.jpg";
@@ -12,15 +15,54 @@ import { IoClose } from "react-icons/io5";
 
 export const PlacesImageViewer = () => {
   const placeImages = [
-    imgPlaces1,
-    imgPlaces2,
-    imgPlaces3,
-    imgPlaces4,
-    imgPlaces5,
-    imgPlaces6,
-    imgPlaces7,
-    imgPlaces8,
-    imgPlaces9,
+    {
+      image: imgPlaces1,
+      description: "La Cattedrale di Gravina di Puglia",
+    },
+    {
+      image: imgPlaces2,
+      description: "Biblioteca finya",
+    },
+    {
+      image: imgPlaces3,
+      description: "Ponte Acquedotto",
+    },
+    {
+      image: imgPlaces4,
+      description: "Ponte Acquedotto",
+    },
+    {
+      image: imgPlaces5,
+      description: "Chiesa Madonna della Stella",
+    },
+    {
+      image: imgPlaces6,
+      description: "Chiesa Madonna della Stella",
+    },
+    {
+      image: imgPlaces7,
+      description: "Torre dell'orologio con monumento ai caduti",
+    },
+    {
+      image: imgPlaces8,
+      description: "San Vito vecchio",
+    },
+    {
+      image: imgPlaces9,
+      description: "San Michele delle Grotte",
+    },
+    {
+      image: imgPlaces10,
+      description: "Cola Cola",
+    },
+    {
+      image: imgPlaces11,
+      description: "Museo Fondazione Santomasi",
+    },
+    {
+      image: imgPlaces12,
+      description: "Castello Svevo di Federico II",
+    },
   ];
 
   function openModal() {
@@ -60,16 +102,16 @@ export const PlacesImageViewer = () => {
   return (
     <div className="card-images-places">
       {placeImages.map((el, index) => (
-        <img
-          src={el}
+        <div
+          className="card-images-container"
           onClick={() => {
             openModal();
             currentSlide(index + 1);
           }}
-          alt=""
-          width="350"
-          height="250"
-        />
+        >
+          <img src={el.image} alt="" width="350" height="250" />
+          <div class="overlay">{el.description}</div>
+        </div>
       ))}
 
       <div id="image-viewer-places" className="modal-places">
@@ -82,7 +124,7 @@ export const PlacesImageViewer = () => {
               <div className="numbertext-places">
                 {indx + 1}/ {placeImages.length}
               </div>
-              <img src={elem} alt="" />
+              <img src={elem.image} alt="" />
             </div>
           ))}
           <button className="prev-img-places" onClick={() => plusSlides(-1)}>

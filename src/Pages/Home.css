@@ -160,6 +160,8 @@ img {
 
 
 .informations {
+    width: 1300px;
+    margin: 0 auto;
     line-height: 28px;
     display: flex;
     color: #425141;
