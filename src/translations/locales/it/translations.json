@@ -51,5 +51,9 @@
   "alert": {
     "success": "E-MAIL INVIATA CORRETTAMENTE",
     "error": "PROBLEMA NELL'INVIO DELL'E-MAIL"
+  },
+  "informations": {
+    "rooms": "L'appartamento è composto di 1 camera da letto, 1 bagno, con biancheria da letto e asciugamani, TV a schermo piatto, zona pranzo con cucina completamente attrezzata e balcone con vista sul ponte. Come ospiti dell'appartamento potrete gustare una colazione italiana.",
+    "place": "Il Belvedere si trova nel centro storico di Gravina a due passi dal ponte acquedotto. Dotata di ogni comfort. La zona è molto bella e tranquilla. La sua posizione è ottima per raggiungere facilmente i punti principali da visitare del nostro territorio."
   }
 }

@@ -59,14 +59,17 @@
 
 .booking-badge {
     position: absolute;
-    left: 0px;
+    right: 0px;
     width: 200px;
-    z-index: 2;
+    z-index: 0;
     height: 60px;
     background-color: #003b95;
     color: #fff;
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .booking-badge span {

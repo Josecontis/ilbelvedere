@@ -1,9 +1,12 @@
-import imgPlaces6 from "../Assets/places/352260652.jpg";
-import imgPlaces5 from "../Assets/places/352260652.jpg";
-import imgPlaces4 from "../Assets/places/352260654.jpg";
+import imgPlaces9 from "../Assets/places/352014815.jpg";
+import imgPlaces8 from "../Assets/places/352014814.jpg";
+import imgPlaces7 from "../Assets/places/352014813.jpg";
+import imgPlaces6 from "../Assets/places/352277261.jpg";
+import imgPlaces5 from "../Assets/places/352277260.jpg";
+import imgPlaces4 from "../Assets/places/351791653.jpg";
 import imgPlaces3 from "../Assets/places/352277259.jpg";
-import imgPlaces2 from "../Assets/places/352014867.jpg";
-import imgPlaces1 from "../Assets/places/351791653.jpg";
+import imgPlaces2 from "../Assets/places/352277267.jpg";
+import imgPlaces1 from "../Assets/places/352277262.jpg";
 import "./PlacesImageViewer.css";
 import { IoClose } from "react-icons/io5";
 
@@ -15,6 +18,9 @@ export const PlacesImageViewer = () => {
     imgPlaces4,
     imgPlaces5,
     imgPlaces6,
+    imgPlaces7,
+    imgPlaces8,
+    imgPlaces9,
   ];
 
   function openModal() {
@@ -61,8 +67,8 @@ export const PlacesImageViewer = () => {
             currentSlide(index + 1);
           }}
           alt=""
-          width="200"
-          height="300"
+          width="350"
+          height="250"
         />
       ))}
 

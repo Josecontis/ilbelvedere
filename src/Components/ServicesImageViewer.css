@@ -90,8 +90,8 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev-img-services:hover,
 .next-img-services:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #999;
+  background-color: #999;
+  color: #fff;
 }
 
 /* Number text (1/3 etc) */

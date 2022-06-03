@@ -51,5 +51,9 @@
   "alert": {
     "success": "E-MAIL SEND SUCCESSFULL",
     "error": "ISSUE SENDING E-MAIL"
+  },
+  "informations": {
+    "rooms": "The apartment consists of 1 bedroom, 1 bathroom, with bed linen and towels, flat screen TV, dining area with fully equipped kitchen and balcony overlooking the deck. Guests at the apartment can enjoy an Italian breakfast.",
+    "place": "The Belvedere is located in the historic center of Gravina a stone's throw from the aqueduct bridge. Equipped with every comfort. The area is very nice and quiet. Its location is excellent for easily reaching the main points to visit in our area."
   }
 }

@@ -157,3 +157,14 @@ img {
         font-size: 11px
     }
 }
+
+
+.informations {
+    line-height: 28px;
+    display: flex;
+    color: #425141;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 0px 20px 20px 20px;
+    font-weight: 600;
+}

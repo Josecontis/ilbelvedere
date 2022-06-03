@@ -155,8 +155,9 @@ const Home = () => {
         subtitle={t("splitter.servicesSubTitle")}
         subtitleServices={services}
       />
+      <div className="informations">{t("informations.rooms")}</div>
       <ServicesImageViewer />
-      <div id="places-slideshow" style={{ paddingTop: "40px" }}>
+      <div id="places-slideshow" >
         <Splitter
           icon={<IoCompassOutline />}
           title={t("splitter.placesTitle")}
@@ -165,12 +166,13 @@ const Home = () => {
         />
       </div>
       <PlacesImageViewer />
-      <div id="location" style={{ paddingTop: "40px" }}>
+      <div id="location" >
         <Splitter
           icon={<IoCompassOutline />}
           title={t("splitter.locationTitle")}
           subtitle={t("splitter.locationSubTitle")}
         />
+        <div className="informations">{t("informations.place")}</div>
         <img
           src={gravImg}
           alt="place"
@@ -190,7 +192,7 @@ const Home = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div id="contacts" style={{ paddingTop: "40px" }}>
+      <div id="contacts" >
         <Splitter
           icon={<IoCompassOutline />}
           title={t("splitter.contactsTitle")}
