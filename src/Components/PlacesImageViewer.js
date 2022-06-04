@@ -110,7 +110,7 @@ export const PlacesImageViewer = () => {
           }}
         >
           <img src={el.image} alt="" width="350" height="250" />
-          <div class="overlay">{el.description}</div>
+          <div className="overlay">{el.description}</div>
         </div>
       ))}
 
@@ -120,7 +120,7 @@ export const PlacesImageViewer = () => {
             <IoClose />
           </div>
           {placeImages.map((elem, indx) => (
-            <div className="slides-places">
+            <div key={indx} className="slides-places">
               <div className="numbertext-places">
                 {indx + 1}/ {placeImages.length}
               </div>

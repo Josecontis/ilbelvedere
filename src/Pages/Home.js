@@ -63,54 +63,53 @@ const Home = () => {
       icon: <FaShower />,
       label: t("services.bath"),
       description:
-        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
+        "Dotato di due bagni con doccia, asciugamani, saponi e asciuga capelli.",
     },
     {
       icon: <MdDryCleaning />,
       label: t("services.towel"),
-      description: "Enjoy fresh linens and towels. Change daily upon request.",
+      description: "Godetevi lenzuola e asciugamani freschi.",
     },
     {
       icon: <FaWifi />,
       label: t("services.wifi"),
       description:
-        "Ospitalità, connessione e condivisione. Per questa ragione l’intera struttura è dotata di Wi-Fi libero per tutti gli ospiti.",
+        "Ospitalità, connessione e condivisione. Per questa ragione l’intera struttura è dotata di Wi-Fi per tutti gli ospiti.",
     },
     {
       icon: <RiComputerFill />,
       label: t("services.tv"),
       description:
-        "Per un'esperienza di ospitalità davvero superiore, ogni camera è dotata di televisore digitale per offrire intrattenimento, svago e informazione.",
+        "Per un'esperienza di ospitalità davvero superiore, ogni camera è dotata di due televisori per offrire intrattenimento, svago e informazione.",
     },
     {
       icon: <BsDoorClosedFill />,
       label: t("services.entry"),
       description:
-        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
+        "Per una maggiore privacy e tranquillità, gli ospiti avranno garantito l’autonomo ingresso alla struttura.",
     },
     {
       icon: <AiFillEye />,
       label: t("services.view"),
       description:
-        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
+        "Il balcone principale e la finestra offrono una vista panoramica della gravina e del ponte acquedotto.",
     },
     {
       icon: <MdLocalLaundryService />,
       label: t("services.clean"),
       description:
-        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
+        "Ogni camera dispone di servizi di pulizia giornalieri, con la possibilità di usufruire del servizio lavanderia.",
     },
     {
       icon: <BsSafe2Fill />,
       label: t("services.safe"),
       description:
-        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
+        "Per ragioni di sicurezza, l'immobile è dotato di Estintori, Telecamere a circuito chiuso, Sicurezza 24 ore su 24, Cassaforte.",
     },
     {
       icon: <MdLuggage />,
       label: t("services.bagage"),
-      description:
-        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
+      description: "Spazio necessario per immagazinare i bagagli da viaggio.",
     },
   ];
 
@@ -157,7 +156,7 @@ const Home = () => {
       />
       <div className="informations">{t("informations.rooms")}</div>
       <ServicesImageViewer />
-      <div id="places-slideshow" >
+      <div id="places-slideshow" style={{ paddingTop: "50px" }}>
         <Splitter
           icon={<IoCompassOutline />}
           title={t("splitter.placesTitle")}
@@ -166,7 +165,7 @@ const Home = () => {
         />
       </div>
       <PlacesImageViewer />
-      <div id="location" >
+      <div id="location" style={{ paddingTop: "50px" }}>
         <Splitter
           icon={<IoCompassOutline />}
           title={t("splitter.locationTitle")}
@@ -192,7 +191,7 @@ const Home = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div id="contacts" >
+      <div id="contacts" style={{ paddingTop: "50px" }}>
         <Splitter
           icon={<IoCompassOutline />}
           title={t("splitter.contactsTitle")}

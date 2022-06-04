@@ -8,7 +8,7 @@
     "entry": "Ingresso indipendente",
     "view": "Vista panormica",
     "clean": "Pulizie giornaliere",
-    "safe": "Cassaforte",
+    "safe": "Sicurezza",
     "bagage": "Bagagli"
   },
   "imgSlider": {
@@ -28,7 +28,8 @@
     "contactsTitle": "Contatti",
     "contactsSubTitle1": "Compila il form qui sotto. In alternativa, contattaci al ",
     "contactsSubTitle2": "o scrivi a ",
-    "button": "punto panoramico vicino"
+    "button": "punto panoramico vicino",
+    "vrButton": "Tour online"
   },
   "contacts": {
     "name": "Nome*",

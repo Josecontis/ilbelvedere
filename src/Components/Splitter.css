@@ -62,6 +62,7 @@
 
 .splitter-title-button a {
     color: #ffffff;
+    padding: 10px 13px;
 }
 
 .splitter-title-button button {
@@ -70,7 +71,7 @@
     border: none;
     background-color: #8fb98a;
     font-size: 12px;
-    padding: 12px;
+    padding: 12px 0;
     border-radius: 5px;
     transition-duration: 1s;
 }
@@ -111,4 +112,31 @@
     margin: 0 auto;
     color: #8fb98a;
     font-size: 46px;
+}
+
+.splitter-vr-button {
+    display: inline-flex;
+    float: right;
+    margin-right: 20px;
+}
+
+.splitter-vr-button a {
+    color: #ffffff;
+    padding: 10px 58px;
+}
+
+.splitter-vr-button button {
+    width: 200px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #8fb98a;
+    font-size: 12px;
+    padding: 12px 0;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+.splitter-vr-button button:hover {
+    background-color: #363636;
+    cursor: pointer;
 }

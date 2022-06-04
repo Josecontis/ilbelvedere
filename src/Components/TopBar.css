@@ -36,6 +36,7 @@
 .top-bar button a {
     text-decoration: none;
     color: #ffffff;
+    padding: 26px 42px;
 }
 
 .top-bar button:hover {
@@ -43,7 +44,6 @@
     color: #ffffff;
     cursor: pointer;
 }
-
 
 .info {
     margin-left: 9%;

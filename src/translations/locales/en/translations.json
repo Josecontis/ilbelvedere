@@ -8,7 +8,7 @@
     "entry": "Independent entrance",
     "view": "Panormic view",
     "clean": "Daily cleaning",
-    "safe": "Safe",
+    "safe": "Security",
     "bagage": "Bagage"
   },
   "imgSlider": {
@@ -28,7 +28,8 @@
     "contactsTitle": "Contacts",
     "contactsSubTitle1": "Fill out the form below. Alternatively, contact us at ",
     "contactsSubTitle2": "or write to ",
-    "button": "viewpoint nearby"
+    "button": "viewpoint nearby",
+    "vrButton": "Online tour"
   },
   "contacts": {
     "name": "Name*",

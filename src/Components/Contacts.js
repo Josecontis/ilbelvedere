@@ -31,30 +31,41 @@ export const Contacts = () => {
       .then(
         function (response) {
           setTestFlag(1);
+          renderAlert();
           console.log("SUCCESS!", response.status, response.text);
         },
         function (error) {
           setTestFlag(-1);
+          renderAlert();
           console.log("FAILED...", error);
         }
       );
   };
 
   const renderAlert = () => {
-    return testFlag === 1 ? (
-      <AlertNotification Success={true} />
-    ) : testFlag === -1 ? (
-      <AlertNotification Success={false} />
-    ) : null;
+    if (testFlag === 1) {
+      return (
+        <div className="alert-container">
+          <AlertNotification Success={true} />
+        </div>
+      );
+    } else if (testFlag === -1) {
+      return (
+        <div className="alert-container">
+          <AlertNotification Success={false} />
+        </div>
+      );
+    }
   };
 
   return (
     <div className="form-contacts-container">
-      <div className="alert-container">{renderAlert()}</div>
+      {renderAlert()}
       <div>
         <div className="name-form">
           <label className="form-label">{t("contacts.name")}</label>
           <input
+            autoComplete="off"
             id="name"
             className="form-input"
             onChange={(e) => setName(e.target.value)}
@@ -63,6 +74,7 @@ export const Contacts = () => {
         <div className="email-form">
           <label className="form-label">{t("contacts.email")}</label>
           <input
+            autoComplete="off"
             id="email"
             className="form-input"
             onChange={(e) => setEmail(e.target.value)}
@@ -72,6 +84,7 @@ export const Contacts = () => {
       <div className="subject-form">
         <label className="form-label">{t("contacts.object")}</label>
         <input
+          autoComplete="off"
           id="subject"
           className="form-input"
           onChange={(e) => setObject(e.target.value)}
@@ -93,7 +106,10 @@ export const Contacts = () => {
         }
         onClick={(e) => {
           sendEmail(e);
-          renderAlert();
+          setName("");
+          setEmail("");
+          setObject("");
+          setMessage("");
         }}
       >
         {t("contacts.send")}

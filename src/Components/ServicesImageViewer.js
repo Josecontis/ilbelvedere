@@ -89,14 +89,13 @@ export const ServicesImageViewer = () => {
           height="300"
         />
       ))}
-
       <div id="image-viewer-services" className="modal-services">
         <div className="modal-content-services">
           <div className="modal-close-services" onClick={() => closeModal()}>
             <IoClose />
           </div>
           {homeImages.map((elm, idx) => (
-            <div className="slides-services">
+            <div key={idx} className="slides-services">
               <div className="numbertext-services">
                 {idx + 1}/ {homeImages.length}
               </div>

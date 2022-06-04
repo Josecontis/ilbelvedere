@@ -22,6 +22,19 @@ const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
             </button>
           </div>
         )}
+        {hasButton && (
+          <div className="splitter-vr-button">
+            <button>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.provinciabari.com/VirtualTour/GravinainPuglia/tour.html"
+              >
+                {t("splitter.vrButton")}
+              </a>
+            </button>
+          </div>
+        )}
         <div className="splitter-title-label">{title}</div>
       </div>
 
