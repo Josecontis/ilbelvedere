@@ -15,7 +15,7 @@
     border-width: 0;
     width: 47%;
     border-style: solid;
-    border-color: #ccc;
+    border-color: var(--global-middle-grey);
     border-bottom-width: 1px;
 }
 
@@ -27,14 +27,14 @@
     border-width: 0;
     width: 47%;
     border-style: solid;
-    border-color: #ccc;
+    border-color: var(--global-middle-grey);
     border-bottom-width: 1px;
 }
 
 .splitter-bar {
     height: 30px;
     font-size: 36px;
-    color: #8fb98a;
+    color: var(--global-light-green);
 }
 
 .splitter-title {
@@ -46,7 +46,7 @@
     margin-left: auto;
     margin-top: 20px;
     font-weight: 600;
-    color: #425141;
+    color: var(--global-dark-green);
 }
 
 .splitter-title-label {
@@ -61,7 +61,7 @@
 }
 
 .splitter-title-button a {
-    color: #ffffff;
+    color: var(--global-white);
     padding: 10px 13px;
 }
 
@@ -69,7 +69,7 @@
     width: 200px;
     text-transform: uppercase;
     border: none;
-    background-color: #8fb98a;
+    background-color: var(--global-light-green);
     font-size: 12px;
     padding: 12px 0;
     border-radius: 5px;
@@ -77,14 +77,14 @@
 }
 
 .splitter-title-button button:hover {
-    background-color: #363636;
+    background-color: var(--global-brown);
     cursor: pointer;
 }
 
 .splitter-subtitle {
     font-size: 16px;
     margin-top: 10px;
-    color: #9c9c9c;
+    color: var(--global-dark-grey);
 }
 
 .splitter-subtitle-services {
@@ -99,7 +99,7 @@
     width: 255px;
     font-size: 16px;
     display: grid;
-    color: #425141;
+    color: var(--global-dark-green);
     font-weight: 600;
     align-items: center;
 }
@@ -110,7 +110,7 @@
 
 .services svg {
     margin: 0 auto;
-    color: #8fb98a;
+    color: var(--global-light-green);
     font-size: 46px;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .splitter-vr-button a {
-    color: #ffffff;
+    color: var(--global-white);
     padding: 10px 58px;
 }
 
@@ -129,7 +129,7 @@
     width: 200px;
     text-transform: uppercase;
     border: none;
-    background-color: #8fb98a;
+    background-color: var(--global-light-green);
     font-size: 12px;
     padding: 12px 0;
     border-radius: 5px;
@@ -137,6 +137,6 @@
 }
 
 .splitter-vr-button button:hover {
-    background-color: #363636;
+    background-color: var(--global-brown);
     cursor: pointer;
 }

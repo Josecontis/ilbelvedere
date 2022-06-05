@@ -1,6 +1,6 @@
 .footer {
     height: 300px;
-    background-color: #425141;
+    background-color: var(--global-dark-green);
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -63,8 +63,8 @@
     width: 200px;
     z-index: 0;
     height: 60px;
-    background-color: #003b95;
-    color: #fff;
+    background-color: var(--global-booking-blue);
+    color: var(--global-white);
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -78,7 +78,7 @@
     width: 172px;
     font-weight: 600;
     text-align: center;
-    border-bottom: 1px solid #006ce4;
+    border-bottom: 1px solid var(--global-booking-cian);
 }
 
 .booking-rate {
@@ -89,7 +89,7 @@
     align-items: center;
     font-weight: 600;
     justify-content: center;
-    background-color: #006ce4;
-    color: #fff;
+    background-color: var(--global-booking-cian);
+    color: var(--global-white);
     border-radius: 10px;
 }

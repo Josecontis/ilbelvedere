@@ -14,7 +14,7 @@ img {
     height: 900px;
     max-height: 900px;
     position: relative;
-    background-color: #425141;
+    background-color: var(--global-dark-green);
     margin: auto;
 }
 
@@ -24,7 +24,7 @@ img {
 
 /* Caption text */
 .welcome-text {
-    color: #425141;
+    color: var(--global-dark-green);
     padding: 8px 12px;
     position: absolute;
     bottom: 60%;
@@ -44,7 +44,7 @@ img {
 }
 
 .label {
-    color: #fff;
+    color: var(--global-white);
     text-transform: uppercase;
     padding: 8px 12px;
     position: absolute;
@@ -60,7 +60,7 @@ img {
 }
 
 .sub-label {
-    color: #fff;
+    color: var(--global-white);
     padding: 8px 12px;
     position: absolute;
     bottom: 44%;
@@ -73,7 +73,7 @@ img {
 }
 
 .review-label-coffe {
-    color: #fff;
+    color: var(--global-white);
     font-weight: 600;
     padding: 8px 12px;
     position: absolute;
@@ -93,7 +93,7 @@ img {
 }
 
 .review-label-bath {
-    color: #fff;
+    color: var(--global-white);
     font-weight: 600;
     padding: 8px 12px;
     position: absolute;
@@ -118,7 +118,7 @@ img {
     height: 15px;
     width: 15px;
     margin: 0 6px;
-    background-color: #8fb98a;
+    background-color: var(--global-light-green);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -132,7 +132,7 @@ img {
 }
 
 .active {
-    background-color: #425141;
+    background-color: var(--global-dark-green);
 }
 
 /* Fading animation */
@@ -164,7 +164,7 @@ img {
     margin: 0 auto;
     line-height: 28px;
     display: flex;
-    color: #425141;
+    color: var(--global-dark-green);
     margin-bottom: 20px;
     font-size: 16px;
     padding: 0px 20px 20px 20px;

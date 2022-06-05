@@ -1,6 +1,6 @@
 .top-bar {
     height: 70px;
-    background-color: #425141;
+    background-color: var(--global-dark-green);
     display: flex;
     width: 100%;
     align-items: center;
@@ -25,8 +25,8 @@
     height: 100%;
     width: 170px;
     border: none;
-    background-color: #8fb98a;
-    color: #ffffff;
+    background-color: var(--global-light-green);
+    color: var(--global-white);
     font-size: 16px;
     margin-left: auto;
     text-transform: uppercase;
@@ -35,13 +35,13 @@
 
 .top-bar button a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--global-white);
     padding: 26px 42px;
 }
 
 .top-bar button:hover {
-    background-color: #363636;
-    color: #ffffff;
+    background-color: var(--global-brown);
+    color: var(--global-white);
     cursor: pointer;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .info a {
-    color: #ffffff;
+    color: var(--global-white);
     font-size: 16px;
     margin-left: 10px;
     text-decoration: none;
@@ -61,12 +61,12 @@
 }
 
 .info svg {
-    color: #8fb98a;
+    color: var(--global-light-green);
     font-size: 18px;
 }
 
 .info a:hover {
-    color: #8fb98a;
+    color: var(--global-light-green);
     cursor: pointer;
 }
 

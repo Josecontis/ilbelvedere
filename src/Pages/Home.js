@@ -56,60 +56,52 @@ const Home = () => {
     {
       icon: <GiBoatPropeller />,
       label: t("services.air"),
-      description:
-        "Ogni camera dispone di impianti d’aria condizionata di ultima generazione per garantire soggiorni freschi e piacevoli.",
+      description: t("modal.air"),
     },
     {
       icon: <FaShower />,
       label: t("services.bath"),
-      description:
-        "Dotato di due bagni con doccia, asciugamani, saponi e asciuga capelli.",
+      description: t("modal.bath"),
     },
     {
       icon: <MdDryCleaning />,
       label: t("services.towel"),
-      description: "Godetevi lenzuola e asciugamani freschi.",
+      description: t("modal.towel"),
     },
     {
       icon: <FaWifi />,
       label: t("services.wifi"),
-      description:
-        "Ospitalità, connessione e condivisione. Per questa ragione l’intera struttura è dotata di Wi-Fi per tutti gli ospiti.",
+      description: t("modal.wifi"),
     },
     {
       icon: <RiComputerFill />,
       label: t("services.tv"),
-      description:
-        "Per un'esperienza di ospitalità davvero superiore, ogni camera è dotata di due televisori per offrire intrattenimento, svago e informazione.",
+      description: t("modal.tv"),
     },
     {
       icon: <BsDoorClosedFill />,
       label: t("services.entry"),
-      description:
-        "Per una maggiore privacy e tranquillità, gli ospiti avranno garantito l’autonomo ingresso alla struttura.",
+      description: t("modal.entry"),
     },
     {
       icon: <AiFillEye />,
       label: t("services.view"),
-      description:
-        "Il balcone principale e la finestra offrono una vista panoramica della gravina e del ponte acquedotto.",
+      description: t("modal.view"),
     },
     {
       icon: <MdLocalLaundryService />,
       label: t("services.clean"),
-      description:
-        "Ogni camera dispone di servizi di pulizia giornalieri, con la possibilità di usufruire del servizio lavanderia.",
+      description: t("modal.clean"),
     },
     {
       icon: <BsSafe2Fill />,
       label: t("services.safe"),
-      description:
-        "Per ragioni di sicurezza, l'immobile è dotato di Estintori, Telecamere a circuito chiuso, Sicurezza 24 ore su 24, Cassaforte.",
+      description: t("modal.safe"),
     },
     {
       icon: <MdLuggage />,
       label: t("services.bagage"),
-      description: "Spazio necessario per immagazinare i bagagli da viaggio.",
+      description: t("modal.bagage"),
     },
   ];
 

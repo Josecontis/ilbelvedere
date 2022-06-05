@@ -1,12 +1,12 @@
 .form-label {
-  color: #000;
+  color: var(--global-black);
   width: 100%;
   text-align: left;
   font-size: 14px;
 }
 
 .form-input {
-  color: #000;
+  color: var(--global-black);
   width: -webkit-fill-available;
   text-align: left;
   padding: 10px;
@@ -15,7 +15,7 @@
 }
 
 .form-text-area {
-  color: #000;
+  color: var(--global-black);
   width: -webkit-fill-available;
   height: 100px;
   text-align: left;
@@ -68,8 +68,8 @@
   width: 100%;
   text-transform: uppercase;
   border: none;
-  color: #fff;
-  background-color: #8fb98a;
+  color: var(--global-white);
+  background-color: var(--global-light-green);
   font-size: 16px;
   font-weight: 600;
   padding: 12px;
@@ -79,7 +79,7 @@
 }
 
 .form-button:hover {
-  background-color: #363636;
+  background-color: var(--global-brown);
   cursor: pointer;
 }
 
@@ -87,8 +87,8 @@
   width: 100%;
   text-transform: uppercase;
   border: none;
-  color: #fff;
-  background-color: #8fb98a;
+  color: var(--global-white);
+  background-color: var(--global-light-green);
   font-size: 16px;
   font-weight: 600;
   padding: 12px;
