@@ -5,13 +5,40 @@
   font-size: 14px;
 }
 
+.form-label-error {
+  color: var(--global-fail);
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
 .form-input {
   color: var(--global-black);
   width: -webkit-fill-available;
   text-align: left;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--global-middle-grey);
+}
+
+.form-input:focus, .form-text-area:focus {
+  outline: none;
+  box-shadow: 0px 4px 12px var(--global-middle-grey);
+}
+
+.form-input-error {
+  color: var(--global-black);
+  width: -webkit-fill-available;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--global-fail);
+}
+
+.form-input-error:focus {
+  outline: none;
+  box-shadow: 0px 4px 12px var(--global-middle-grey);
 }
 
 .form-text-area {
@@ -21,12 +48,7 @@
   text-align: left;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.form-input:focus, .form-text-area:focus {
-  outline: none;
-  box-shadow: 0px 4px 12px #ccc;
+  border: 1px solid var(--global-middle-grey);
 }
 
 .form-contacts-container {

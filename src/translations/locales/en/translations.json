@@ -68,5 +68,8 @@
     "clean": "Each room has daily cleaning services, with the possibility of using the laundry service.",
     "safe": "For safety reasons, the property is equipped with Fire Extinguishers, CCTV cameras, 24-hour security, Safe.",
     "bagage": "Space needed to store travel luggage."
+  },
+  "validation": {
+    "email": "Not valid format."
   }
 }

@@ -10,6 +10,7 @@ export const Contacts = () => {
   const [object, setObject] = useState("");
   const [message, setMessage] = useState("");
   const [testFlag, setTestFlag] = useState(0);
+  const [validation, setValidation] = useState(false);
 
   const sendEmail = () => {
     let templateParams = {
@@ -73,11 +74,22 @@ export const Contacts = () => {
         </div>
         <div className="email-form">
           <label className="form-label">{t("contacts.email")}</label>
+          {!validation && email !== "" && (
+            <label className="form-label-error">{t("validation.email")}</label>
+          )}
           <input
             autoComplete="off"
             id="email"
-            className="form-input"
-            onChange={(e) => setEmail(e.target.value)}
+            className={
+              email === "" || validation ? "form-input" : "form-input-error"
+            }
+            onChange={(e) => {
+              setEmail(e.target.value);
+              let emailTest = new RegExp(
+                "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
+              );
+              email !== "" && setValidation(emailTest.test(email));
+            }}
           />
         </div>
       </div>
@@ -100,12 +112,12 @@ export const Contacts = () => {
       </div>
       <button
         className={
-          name && email && object && message
+          name && email && object && message && validation
             ? "form-button"
             : "form-button-disabled"
         }
         onClick={(e) => {
-          sendEmail(e);
+          name && email && object && message && validation && sendEmail(e);
           setName("");
           setEmail("");
           setObject("");

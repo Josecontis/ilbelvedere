@@ -68,5 +68,8 @@
     "clean": "Ogni camera dispone di servizi di pulizia giornalieri, con la possibilità di usufruire del servizio lavanderia.",
     "safe": "Per ragioni di sicurezza, l'immobile è dotato di Estintori, Telecamere a circuito chiuso, Sicurezza 24 ore su 24, Cassaforte.",
     "bagage": "Spazio necessario per immagazinare i bagagli da viaggio."
+  },
+  "validation": {
+    "email": "Il formato email non è valido."
   }
 }
