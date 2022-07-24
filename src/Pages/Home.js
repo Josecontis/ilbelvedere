@@ -1,7 +1,7 @@
 import "./Home.css";
 import coffeImg from "../Assets/cropped/352260130crop.jpg";
 import bedImg from "../Assets/cropped/336261885crop.jpg";
-import gravImg from "../Assets/places/grav.png";
+import gravImg from "../Assets/places/ponte.png";
 import bathImg from "../Assets/cropped/342667958crop.jpg";
 import Splitter from "../Components/Splitter";
 import { IoBedOutline, IoCompassOutline } from "react-icons/io5";

@@ -19,34 +19,45 @@ const TopBar = () => {
 
   return (
     <>
-      <div className="top-bar">
-        <img alt="logo" src={logoHome} />
-        <div className="info">
-          <HiOutlineHome />
-          <a href="/">{t("topBar.home")}</a>
+      <section class="top-nav">
+        <div>
+          <img alt="logo" src={logoHome} />
         </div>
-        <div className="info">
-          <HiOutlinePhotograph />
-          <a href="#places-slideshow">{t("topBar.places")}</a>
-        </div>
-        <div className="info">
-          <HiOutlineLocationMarker />
-          <a href="#location">{t("topBar.location")}</a>
-        </div>
-        <div className="info">
-          <AiOutlinePhone />
-          <a href="#contacts">{t("topBar.contacts")}</a>
-        </div>
-        <button>
-          <a
-            rel="noreferrer"
-            href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
-            target="_blank"
-          >
-            {t("topBar.book")}
-          </a>
-        </button>
-      </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" htmlFor="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li>
+            <HiOutlineHome />
+            <a href="/">{t("topBar.home")}</a>
+          </li>
+          <li>
+            <HiOutlinePhotograph />
+            <a href="#places-slideshow">{t("topBar.places")}</a>
+          </li>
+          <li>
+            <HiOutlineLocationMarker />
+            <a href="#location">{t("topBar.location")}</a>
+          </li>
+          <li>
+            <AiOutlinePhone />
+            <a href="#contacts">{t("topBar.contacts")}</a>
+          </li>
+          <li>
+            <button>
+              <a
+                rel="noreferrer"
+                href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
+                target="_blank"
+              >
+                {t("topBar.book")}
+              </a>
+            </button>
+          </li>
+        </ul>
+      </section>
+
       <div className="button-translation">
         <button
           title="Translate to english"
@@ -75,6 +86,46 @@ const TopBar = () => {
           />
         </button>
       </div>
+
+      {/* <div className="top-bar">
+        <img alt="logo" src={logoHome} />
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div className="info">
+          <HiOutlineHome />
+          <a href="/">{t("topBar.home")}</a>
+        </div>
+        <div className="info">
+          <HiOutlinePhotograph />
+          <a href="#places-slideshow">{t("topBar.places")}</a>
+        </div>
+        <div className="info">
+          <HiOutlineLocationMarker />
+          <a href="#location">{t("topBar.location")}</a>
+        </div>
+        <div className="info">
+          <AiOutlinePhone />
+          <a href="#contacts">{t("topBar.contacts")}</a>
+        </div>
+        <div className="info">
+          <button>
+            <a
+              rel="noreferrer"
+              href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
+              target="_blank"
+            >
+              {t("topBar.book")}
+            </a>
+          </button>
+        </div>
+      </div>
+      */}
     </>
   );
 };
