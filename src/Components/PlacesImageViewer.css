@@ -72,6 +72,7 @@
   font-size: 34px;
   font-weight: bold;
   right: 0;
+  margin-top: 14px;
   margin-right: 24px;
   position: absolute;
 }
@@ -104,12 +105,14 @@
 
 .next-img-places {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 7px 0 0 7px;
+  border: none;
 }
 
 .prev-img-places {
   left: 0;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 7px 7px 0;
+  border: none;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -124,6 +127,29 @@
   color: var(--global-light-grey);
   font-size: 16px;
   font-weight: bold;
+  margin-top: 24px;
   margin-left: 24px;
   position: absolute;
+}
+
+
+@media screen and (min-width: 1100px) {
+  .card-images-places img {
+    margin: 80px;
+    max-width: 860px;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 630px) {
+  .card-images-places img {
+    margin: 180px 20px;
+    max-width: 595px;
+  }
+}
+
+@media screen and (max-width: 630px) and (min-width: 300px) {
+  .card-images-places img {
+    margin: 270px 10px;
+    max-width: 360px;
+  }
 }

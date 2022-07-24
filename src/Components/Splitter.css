@@ -31,6 +31,32 @@
     border-bottom-width: 1px;
 }
 
+
+
+@media (min-width: 80px) {
+
+    .splitter-container::after, .splitter-container::before {
+        width: 42%;
+    }
+}
+
+@media (min-width: 680px) {
+
+    .splitter-container::after, .splitter-container::before {
+        width: 44%;
+    }
+}
+
+
+
+@media (min-width: 1100px) {
+
+    .splitter-container::after, .splitter-container::before {
+        width: 46%;
+    }
+}
+
+
 .splitter-bar {
     height: 30px;
     font-size: 36px;
