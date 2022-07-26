@@ -38,7 +38,7 @@ const App = () => {
           <Home />
         </div>
         <a
-          className="watsapp-button"
+          className="whatsapp-button"
           data-action="open"
           data-phone="222"
           rel="noreferrer"

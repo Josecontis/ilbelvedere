@@ -10,7 +10,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    min-width: 1000px;
+    min-width: auto;
     height: 900px;
     max-height: 900px;
     position: relative;
@@ -20,6 +20,7 @@ img {
 
 .slideshow-container img {
     height: 900px;
+    margin-top: 70px;
 }
 
 /* Caption text */
@@ -27,7 +28,7 @@ img {
     color: var(--global-dark-green);
     padding: 8px 12px;
     position: absolute;
-    bottom: 60%;
+    bottom: 56%;
     width: 100%;
     font-family: 'Pinyon Script', cursive;
     text-align: center;
@@ -48,12 +49,11 @@ img {
     text-transform: uppercase;
     padding: 8px 12px;
     position: absolute;
-    bottom: 47%;
+    bottom: 48%;
     width: 40%;
     left: 30%;
     text-align: center;
     font-size: 32px;
-    line-height: 60px;
     font-weight: 600;
     animation: slide-right 2s forwards;
     transform: translateX(-100%);
@@ -76,11 +76,10 @@ img {
     color: var(--global-white);
     font-weight: 600;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     float: right;
-    bottom: 76%;
+    bottom: 900px;
     width: 40%;
-    left: 50%;
     font-size: 20px;
     animation: slide-right 1s forwards;
     transform: translateX(100%);
@@ -96,11 +95,10 @@ img {
     color: var(--global-white);
     font-weight: 600;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     float: left;
-    top: 76%;
+    top: -200px;
     width: 40%;
-    right: 50%;
     font-size: 20px;
     animation: slide-right 1s forwards;
     transform: translateX(100%);
@@ -125,10 +123,12 @@ img {
 }
 
 .dot-container {
-    top: 845px;
-    left: 47.5%;
-    position: absolute;
+    top: -34px;
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 .active {
@@ -169,4 +169,118 @@ img {
     font-size: 16px;
     padding: 0px 20px 20px 20px;
     font-weight: 600;
+}
+
+@media screen and (min-width: 1100px) {
+    .label {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 800px) {
+
+    .slideshow-container,
+    .slideshow-container img {
+        height: 620px;
+        margin-top: 35px;
+    }
+
+    .welcome-text {
+        font-size: 70px;
+    }
+
+    .label {
+        font-size: 20px;
+    }
+
+    .sub-label {
+        font-size: 14px;
+    }
+
+    .review-label-coffe .review-author-coffe,
+    .review-label-bath .review-author-bath,
+    .review-label-bath,
+    .review-label-coffe {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 800px) {
+
+    .welcome-text {
+        font-size: 70px;
+    }
+
+    .label {
+        font-size: 18px;
+    }
+
+    .sub-label {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+
+    .slideshow-container,
+    .slideshow-container img {
+        height: 520px;
+        margin-top: 35px;
+    }
+
+    .review-label-coffe .review-author-coffe,
+    .review-label-bath .review-author-bath,
+    .review-label-bath,
+    .review-label-coffe {
+        display: none;
+    }
+
+    .welcome-text {
+        font-size: 50px;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+
+    .sub-label {
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+
+    .slideshow-container,
+    .slideshow-container img {
+        height: 320px;
+        margin-top: 35px;
+    }
+
+    .review-label-coffe .review-author-coffe,
+    .review-label-bath .review-author-bath,
+    .review-label-bath,
+    .review-label-coffe {
+        display: none;
+    }
+
+    .dot {
+        height: 12px;
+        width: 12px;
+    }
+
+    .welcome-text {
+        font-size: 40px;
+    }
+
+    .label {
+        font-size: 8px;
+    }
+
+    .sub-label {
+        font-size: 4px;
+    }
+
 }

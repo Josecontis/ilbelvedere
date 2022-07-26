@@ -65,6 +65,9 @@ const TopBar = () => {
             changeLanguage("en");
             setActive("en");
           }}
+          style={{
+            border: "none",
+          }}
         >
           <img
             className={active === "en" ? "button-active" : ""}

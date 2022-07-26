@@ -4,7 +4,7 @@
   overflow-x: hidden;
 }
 
-.App .watsapp-button {
+.App .whatsapp-button {
   width: 60px;
   height: 60px;
   display: flex;
@@ -19,14 +19,14 @@
 }
 
 @media (max-width: 600px) {
-  .App .watsapp-button {
+  .App .whatsapp-button {
     width: 40px;
     height: 40px;
     font-size: 22px;
   }
 }
 
-.watsapp-button {
+.whatsapp-button {
   position: fixed;
   bottom: 20px;
   left: 20px;
