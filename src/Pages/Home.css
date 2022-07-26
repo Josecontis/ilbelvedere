@@ -10,9 +10,8 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    min-width: auto;
-    height: 900px;
-    max-height: 900px;
+    width: 100%;
+    height: 970px;
     position: relative;
     background-color: var(--global-dark-green);
     margin: auto;
@@ -20,7 +19,7 @@ img {
 
 .slideshow-container img {
     height: 900px;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 /* Caption text */
@@ -175,6 +174,11 @@ img {
     .label {
         font-size: 24px;
     }
+
+    .slideshow-container,
+    .slideshow-container img {
+        height: 970px;
+    }
 }
 
 @media screen and (max-width: 1100px) and (min-width: 800px) {
@@ -182,7 +186,6 @@ img {
     .slideshow-container,
     .slideshow-container img {
         height: 620px;
-        margin-top: 35px;
     }
 
     .welcome-text {
@@ -227,7 +230,6 @@ img {
     .slideshow-container,
     .slideshow-container img {
         height: 520px;
-        margin-top: 35px;
     }
 
     .review-label-coffe .review-author-coffe,
@@ -256,7 +258,6 @@ img {
     .slideshow-container,
     .slideshow-container img {
         height: 320px;
-        margin-top: 35px;
     }
 
     .review-label-coffe .review-author-coffe,
@@ -273,14 +274,17 @@ img {
 
     .welcome-text {
         font-size: 40px;
+        bottom: 45%;
     }
 
     .label {
         font-size: 8px;
+        bottom: 40%;
     }
 
     .sub-label {
         font-size: 4px;
+        bottom: 37%;
     }
 
 }
