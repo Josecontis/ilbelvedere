@@ -31,32 +31,6 @@
     border-bottom-width: 1px;
 }
 
-
-
-@media (min-width: 80px) {
-
-    .splitter-container::after, .splitter-container::before {
-        width: 42%;
-    }
-}
-
-@media (min-width: 680px) {
-
-    .splitter-container::after, .splitter-container::before {
-        width: 44%;
-    }
-}
-
-
-
-@media (min-width: 1100px) {
-
-    .splitter-container::after, .splitter-container::before {
-        width: 46%;
-    }
-}
-
-
 .splitter-bar {
     height: 30px;
     font-size: 36px;
@@ -165,4 +139,89 @@
 .splitter-vr-button button:hover {
     background-color: var(--global-brown);
     cursor: pointer;
+}
+
+
+@media (min-width: 80px) {
+
+    .splitter-container::after, .splitter-container::before {
+        width: 42%;
+    }
+}
+
+@media (min-width: 680px) {
+
+    .splitter-container::after, .splitter-container::before {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 430px) {
+    .services svg {
+        font-size: 26px;
+    }
+
+    .services {
+        width: 200px;
+        font-size: 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 700px) and (min-width: 430px) {
+    .splitter-title-button button {
+        width: 100px;
+        font-size: 8px;
+
+    }
+
+    .splitter-title-button a {
+        padding: 6px 0px;
+    }
+
+    .splitter-vr-button button {
+        width: 100px;
+        font-size: 8px;
+
+    }
+
+    .splitter-vr-button a {
+        padding: 6px 0px;
+    }
+}
+
+@media screen and (max-width: 430px) and (min-width: 300px) {
+    .services svg {
+        font-size: 14px;
+    }
+
+    .services {
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .splitter-title-button button {
+        width: 100px;
+    }
+
+    .splitter-title-button a {
+        padding: 6px 0px;
+    }
+
+    .splitter-vr-button button {
+        width: 100px;
+    }
+
+    .splitter-vr-button a {
+        padding: 6px 0px;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    .splitter-container::after, .splitter-container::before {
+        width: 46%;
+    }
 }
