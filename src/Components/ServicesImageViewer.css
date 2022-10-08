@@ -108,21 +108,21 @@
 }
 
 @media screen and (min-width: 860px) {
-  .card-images-services img {
-    margin: 16px;
+  .slides-services img {
+    margin: 80px;
     max-width: 860px;
   }
 }
 
 @media screen and (max-width: 860px) and (min-width: 630px) {
-  .card-images-services img {
-    margin: 16px;
+  .slides-services img {
+    margin: 60px;
   }
 }
 
 @media screen and (max-width: 630px) and (min-width: 300px) {
-  .card-images-services img {
-    margin: auto 10px;
+  .slides-services img {
+    margin: 160px 10px;
     max-width: 360px;
   }
 }

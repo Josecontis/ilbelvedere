@@ -145,3 +145,55 @@
     opacity: 0;
   }
 }
+
+@media screen and (min-width: 860px) {
+  .slides-services img {
+    margin: 80px;
+    max-width: 860px;
+  }
+}
+
+@media screen and (max-width: 860px) and (min-width: 500px) {
+  .form-contacts-container {
+    width: 470px;
+  }
+
+  .email-form, .name-form {
+    width: 230px;
+  }
+
+  .form-label {
+    font-size: 12px;
+  }
+
+  .form-input {
+    height: 30px;
+  }
+
+  .form-text-area {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px) {
+
+  .form-contacts-container {
+    width: 314px;
+  }
+
+  .email-form, .name-form {
+    width: 150px;
+  }
+
+  .form-label {
+    font-size: 10px;
+  }
+
+  .form-input {
+    height: 30px;
+  }
+
+  .form-text-area {
+    height: 80px;
+  }
+}

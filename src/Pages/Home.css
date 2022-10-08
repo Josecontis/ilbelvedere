@@ -19,7 +19,7 @@ img {
 
 .slideshow-container img {
     height: 900px;
-    padding-top: 70px;
+    padding-top: 60px;
 }
 
 /* Caption text */
@@ -170,6 +170,16 @@ img {
     font-weight: 600;
 }
 
+#location img {
+    width: 100%;
+    height: 30vw;
+    margin-bottom: 20px;
+}
+
+#location iframe {
+    width: 100%;
+    height: 50vw;
+}
 
 @media screen and (min-width: 1100px) {
     .label {
@@ -276,6 +286,8 @@ img {
     .informations {
         width: 320px;
         font-size: 10px;
+        padding: 0;
+        line-height: 20px;
     }
 }
 
@@ -314,5 +326,4 @@ img {
         font-size: 4px;
         bottom: 37%;
     }
-
 }
