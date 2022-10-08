@@ -13,6 +13,8 @@ const TopBar = () => {
   const { t, i18n } = useTranslation();
   const [active, setActive] = useState("it");
 
+  const [isOpen, setIsOpen] = useState(false);
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
@@ -23,39 +25,54 @@ const TopBar = () => {
         <div>
           <img alt="logo" src={logoHome} />
         </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" htmlFor="menu-toggle">
+        <input id="menu-toggle" type="checkbox" checked={isOpen} />
+        <label
+          class="menu-button-container"
+          onClick={() => setIsOpen(!isOpen)}
+          htmlFor="menu-toggle"
+        >
           <div class="menu-button"></div>
         </label>
-        <ul class="menu">
-          <li>
-            <HiOutlineHome />
-            <a href="/">{t("topBar.home")}</a>
-          </li>
-          <li>
-            <HiOutlinePhotograph />
-            <a href="#places-slideshow">{t("topBar.places")}</a>
-          </li>
-          <li>
-            <HiOutlineLocationMarker />
-            <a href="#location">{t("topBar.location")}</a>
-          </li>
-          <li>
-            <AiOutlinePhone />
-            <a href="#contacts">{t("topBar.contacts")}</a>
-          </li>
-          <li>
-            <button>
-              <a
-                rel="noreferrer"
-                href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
-                target="_blank"
-              >
-                {t("topBar.book")}
+        {isOpen && (
+          <ul class="menu">
+            <li>
+              <HiOutlineHome />
+              <a href="/" onClick={() => setIsOpen(!isOpen)}>
+                {t("topBar.home")}
               </a>
-            </button>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <HiOutlinePhotograph />
+              <a href="#places-slideshow" onClick={() => setIsOpen(!isOpen)}>
+                {t("topBar.places")}
+              </a>
+            </li>
+            <li>
+              <HiOutlineLocationMarker />
+              <a href="#location" onClick={() => setIsOpen(!isOpen)}>
+                {t("topBar.location")}
+              </a>
+            </li>
+            <li>
+              <AiOutlinePhone />
+              <a href="#contacts" onClick={() => setIsOpen(!isOpen)}>
+                {t("topBar.contacts")}
+              </a>
+            </li>
+            <li>
+              <button>
+                <a
+                  rel="noreferrer"
+                  href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
+                  target="_blank"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  {t("topBar.book")}
+                </a>
+              </button>
+            </li>
+          </ul>
+        )}
       </section>
 
       <div className="button-translation">

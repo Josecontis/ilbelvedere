@@ -146,13 +146,6 @@
   }
 }
 
-@media screen and (min-width: 860px) {
-  .slides-services img {
-    margin: 80px;
-    max-width: 860px;
-  }
-}
-
 @media screen and (max-width: 860px) and (min-width: 500px) {
   .form-contacts-container {
     width: 470px;

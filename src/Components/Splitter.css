@@ -38,6 +38,8 @@
 }
 
 .splitter-title {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     font-size: 24px;
     width: 100%;
@@ -83,8 +85,9 @@
 
 .splitter-subtitle {
     font-size: 16px;
-    margin-top: 10px;
     color: var(--global-dark-grey);
+    width: 90vw;
+    margin: 0 auto;
 }
 
 .splitter-subtitle-services {
@@ -128,10 +131,14 @@
 .splitter-vr-button button {
     width: 200px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     background-color: var(--global-light-green);
     font-size: 12px;
     padding: 12px 0;
+    height: 32px;
     border-radius: 5px;
     transition-duration: 1s;
 }
@@ -141,13 +148,6 @@
     cursor: pointer;
 }
 
-
-@media (min-width: 80px) {
-
-    .splitter-container::after, .splitter-container::before {
-        width: 42%;
-    }
-}
 
 @media (min-width: 680px) {
 
@@ -165,9 +165,6 @@
         width: 200px;
         font-size: 10px;
     }
-
-
-
 }
 
 @media screen and (max-width: 700px) and (min-width: 430px) {
@@ -184,17 +181,42 @@
     .splitter-vr-button button {
         width: 100px;
         font-size: 8px;
-
+        height: 24px;
     }
 
     .splitter-vr-button a {
         padding: 6px 0px;
     }
+
+    .splitter-title-label {
+        width: 190px;
+    }
+
+    .splitter-title {
+        font-size: 20px;
+    }
+
+    .splitter-subtitle {
+        font-size: 12px;
+    }
+
+    .splitter-container::after, .splitter-container::before {
+        width: 40vw;
+    }
+
+    .splitter-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .splitter-subtitle-services {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 430px) and (min-width: 300px) {
     .services svg {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .services {
@@ -204,6 +226,8 @@
 
     .splitter-title-button button {
         width: 100px;
+        font-size: 8px;
+
     }
 
     .splitter-title-button a {
@@ -212,10 +236,37 @@
 
     .splitter-vr-button button {
         width: 100px;
+        font-size: 8px;
+
     }
 
     .splitter-vr-button a {
         padding: 6px 0px;
+    }
+
+    .splitter-title-label {
+        width: 190px;
+    }
+
+    .splitter-title {
+        font-size: 16px;
+    }
+
+    .splitter-subtitle {
+        font-size: 12px;
+    }
+
+    .splitter-container::after, .splitter-container::before {
+        width: 40vw;
+    }
+
+    .splitter-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .splitter-subtitle-services {
+        margin-top: 30px;
     }
 }
 

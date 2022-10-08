@@ -22,6 +22,7 @@ const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
             </button>
           </div>
         )}
+        <div className="splitter-title-label">{title}</div>{" "}
         {hasButton && (
           <div className="splitter-vr-button">
             <button>
@@ -35,7 +36,6 @@ const Splitter = ({ icon, title, subtitle, subtitleServices, hasButton }) => {
             </button>
           </div>
         )}
-        <div className="splitter-title-label">{title}</div>
       </div>
 
       <div className="splitter-subtitle">{subtitle}</div>
