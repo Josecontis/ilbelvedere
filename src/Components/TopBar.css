@@ -10,7 +10,7 @@
     width: 100%;
     z-index: 3;
     text-transform: uppercase;
-    box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 32px 16px rgb(0 0 0 / 20%);
 }
 
 .top-nav img {
@@ -24,12 +24,12 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 70px;
+    height: 60px;
 }
 
 .menu>li {
     overflow: hidden;
-    height: 70px;
+    height: 60px;
     align-items: center;
     display: flex;
 }
@@ -213,10 +213,10 @@
 
 .button-translation {
     height: 40px;
-    margin-top: 70px;
+    margin-top: 64px;
     position: fixed;
     z-index: 3;
-    margin-left: 15px;
+    margin-left: 8px;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
@@ -246,7 +246,7 @@
     transition-duration: 1s;
 }
 
-
+/* 
 @media screen and (max-width: 700px) and (min-width: 300px) {
 
     .button-translation {
@@ -261,4 +261,4 @@
     .button-translation img {
         width: 20px;
     }
-}
+} */
