@@ -9,7 +9,6 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  max-width: 940px;
 }
 
 .card-images-places .slides-places img:hover {
@@ -132,24 +131,30 @@
   position: absolute;
 }
 
-
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
   .slides-places img {
-    margin: 80px;
-    max-width: 860px;
+    margin: 4vh 0;
+    width: 1500px;
   }
 }
 
-@media screen and (max-width: 1100px) and (min-width: 630px) {
+@media screen and (max-width: 1200px) and (min-width: 860px) {
   .slides-places img {
-    margin: 180px 20px;
-    max-width: 595px;
+    margin: 21vh 0;
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 860px) and (min-width: 630px) {
+  .slides-places img {
+    margin: 28vh 0;
+    width: 700px;
   }
 }
 
 @media screen and (max-width: 630px) and (min-width: 300px) {
   .slides-places img {
-    margin: 270px 10px;
-    max-width: 360px;
+    margin: 35vh 0;
+    width: 450px;
   }
 }

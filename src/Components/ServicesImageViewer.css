@@ -9,13 +9,17 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  max-width: 514px;
   width: 200px;
   height: 300px;
 }
 
 .card-images-services img:hover {
   opacity: 0.7;
+}
+
+.slides-services {
+  display: flex;
+  justify-content: center;
 }
 
 .card-images-services .slides-services img:hover {
@@ -111,21 +115,34 @@
 
 @media screen and (min-width: 860px) {
   .slides-services img {
-    margin: 80px;
-    max-width: 860px;
+    margin: 7vh 0;
+    width: 900px;
+  }
+
+  .card-images-services img {
+    height: auto;
   }
 }
 
 @media screen and (max-width: 860px) and (min-width: 630px) {
   .slides-services img {
-    margin: 60px;
+    margin: 12vh 0;
+    width: 700px;
+  }
+
+  .card-images-services img {
+    height: auto;
   }
 }
 
 @media screen and (max-width: 630px) and (min-width: 300px) {
   .slides-services img {
-    margin: 160px 10px;
-    max-width: 360px;
+    margin: 25vh 0;
+    width: 450px;
+  }
+
+  .card-images-services img {
+    height: auto;
   }
 
   .card-images-services {
@@ -133,10 +150,5 @@
     display: flex;
     gap: 20px 0px;
     flex-wrap: wrap;
-  }
-
-  .card-images-services img {
-    width: 175px;
-    height: 250px;
   }
 }
