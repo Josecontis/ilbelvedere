@@ -10,6 +10,8 @@
   cursor: pointer;
   transition: 0.3s;
   max-width: 514px;
+  width: 200px;
+  height: 300px;
 }
 
 .card-images-services img:hover {
@@ -124,5 +126,17 @@
   .slides-services img {
     margin: 160px 10px;
     max-width: 360px;
+  }
+
+  .card-images-services {
+    justify-content: space-evenly;
+    display: flex;
+    gap: 20px 0px;
+    flex-wrap: wrap;
+  }
+
+  .card-images-services img {
+    width: 175px;
+    height: 250px;
   }
 }

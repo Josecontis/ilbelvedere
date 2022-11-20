@@ -93,8 +93,6 @@ export const ServicesImageViewer = () => {
             currentSlide(index + 1);
           }}
           alt=""
-          width="200"
-          height="300"
         />
       ))}
       <div id="image-viewer-services" className="modal-services">

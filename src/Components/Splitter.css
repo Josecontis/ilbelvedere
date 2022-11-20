@@ -154,6 +154,11 @@
     .splitter-container::after, .splitter-container::before {
         width: 44%;
     }
+
+    .splitter-vr-button a {
+        color: var(--global-white);
+        padding: 10px 5px;
+    }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 430px) {
