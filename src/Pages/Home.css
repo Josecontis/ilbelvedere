@@ -34,7 +34,7 @@ img {
     font-size: 86px;
     font-weight: 700;
     animation: slide-right 1.5s forwards;
-    transform: translateX(100%);
+    transform: translateX(100vw);
 }
 
 @keyframes slide-right {
@@ -55,7 +55,7 @@ img {
     font-size: 32px;
     font-weight: 600;
     animation: slide-right 2s forwards;
-    transform: translateX(-100%);
+    transform: translateX(-100vw);
 }
 
 .sub-label {
@@ -68,7 +68,7 @@ img {
     text-align: center;
     font-size: 16px;
     animation: slide-right 2.5s forwards;
-    transform: translateX(100%);
+    transform: translateX(100vw);
 }
 
 .review-label-coffe {
@@ -77,11 +77,11 @@ img {
     padding: 8px 12px;
     position: relative;
     float: right;
-    bottom: 900px;
+    top: -900px;
     width: 40%;
     font-size: 20px;
     animation: slide-right 1s forwards;
-    transform: translateX(100%);
+    transform: translateX(100vw);
     text-align: end;
 }
 
@@ -100,7 +100,7 @@ img {
     width: 40%;
     font-size: 20px;
     animation: slide-right 1s forwards;
-    transform: translateX(100%);
+    transform: translateX(100vw);
     text-align: start;
 }
 
@@ -109,45 +109,8 @@ img {
     font-size: 18px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    top: -50px;
-    height: 15px;
-    width: 15px;
-    margin: 0 6px;
-    background-color: var(--global-light-green);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.dot-container {
-    top: -34px;
-    width: 100px;
-    height: 20px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-}
-
 .active {
     background-color: var(--global-dark-green);
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
 }
 
 /* On smaller screens, decrease text size */
@@ -286,11 +249,6 @@ img {
     .review-label-bath,
     .review-label-coffe {
         display: none;
-    }
-
-    .dot {
-        height: 12px;
-        width: 12px;
     }
 
     .welcome-text {

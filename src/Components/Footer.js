@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="footer-sites">
         <div className="booking-badge">
           <span>Booking.com</span>
-          <div className="booking-rate">9.0</div>
+          <div className="booking-rate">9.3</div>
         </div>
         <div style={{ float: "left" }}>
           <iframe

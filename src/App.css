@@ -32,12 +32,6 @@
   left: 20px;
 }
 
-.App-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .button-to-top {
   position: fixed;
   z-index: 1;
