@@ -6,8 +6,11 @@ import { Footer } from "./Components/Footer";
 import TopBar from "./Components/TopBar";
 import Home from "./Pages/Home";
 import "./translations/i18next";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
+  const { t } = useTranslation();
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function () {
     scrollFunction();
@@ -29,7 +32,15 @@ const App = () => {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+  const [whatsappUrl, setWhatsappUrl] = useState("");
 
+  useEffect(() => {
+    setWhatsappUrl(
+      `https://web.whatsapp.com/send?phone=3275777844&text=${encodeURIComponent(
+        t("whatsapp.message")
+      )}`
+    );
+  }, [t]);
   return (
     <>
       <TopBar />
@@ -40,10 +51,8 @@ const App = () => {
         <a
           className="whatsapp-button"
           data-action="open"
-          data-phone="222"
-          rel="noreferrer"
-          data-message="Salve! La contatto per maggiori informazioni"
-          href="https://web.whatsapp.com/send?phone=222&amp;text=Salve! La contatto per maggiori informazioni"
+          rel="noopener noreferrer"
+          href={whatsappUrl}
           target="_blank"
         >
           <AiOutlineWhatsApp />

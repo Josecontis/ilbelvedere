@@ -36,7 +36,10 @@
     "email": "E-Mail*",
     "object": "Oggetto*",
     "message": "Messaggio*",
-    "send": "Invia"
+    "send": "Invia",
+    "frTitle": "Traduci in francese",
+    "enTitle": "Traduci in inglese",
+    "itTitle": "Traduci in italiano"
   },
   "topBar": {
     "home": "Home",
@@ -71,5 +74,8 @@
   },
   "validation": {
     "email": "Il formato email non è valido."
+  },
+  "whatsapp": {
+    "message": "Salve! La contatto per maggiori informazioni riguardo al Bed and Breakfast il Belvedere."
   }
 }

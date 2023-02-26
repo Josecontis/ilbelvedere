@@ -43,7 +43,10 @@
     "places": "Itineraries",
     "location": "Where we are",
     "contacts": "Contact us",
-    "book": "Reserve"
+    "book": "Book",
+    "frTitle": "Translate to french",
+    "enTitle": "Translate to english",
+    "itTitle": "Translate to italian"
   },
   "footer": {
     "title": "Il Belvedere holiday home Via Giudice Montea, 70024 Gravina in Puglia BA",
@@ -71,5 +74,8 @@
   },
   "validation": {
     "email": "Not valid format."
+  },
+  "whatsapp": {
+    "message": "Good morning! I need more info about Bed and Breakfast il Belvedere."
   }
 }

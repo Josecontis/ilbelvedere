@@ -1,0 +1,81 @@
+{
+  "services": {
+    "air": "Climatisation",
+    "bath": "Salle de bain avec douche et sèche-cheveux",
+    "towel": "Linge de lit et serviettes",
+    "wifi": "WI-FI gratuit",
+    "tv": "Téléviseur LCD",
+    "entry": "Entrée indépendante",
+    "view": "Vue panoramique",
+    "clean": "Nettoyage quotidien",
+    "safe": "Sécurité",
+    "bagage": "Bagage"
+  },
+  "imgSlider": {
+    "welcome": "Bienvenue",
+    "label": "Passez vos moments de détente au centre de Gravina in Puglia",
+    "subLabel": "L'appartement est meublé avec goût et élégance",
+    "reviewCoffe": "Tout était parfait. L'emplacement à proximité immédiate du pont et à distance de marche du centre était un rêve. C'était propre, la propriétaire était très serviable.",
+    "reviewBath": "Nous n'avons jamais séjourné dans un environnement aussi propre et avec autant d'attention aux détails ! tout impeccable de A à Z. Hospitalité et disponibilité absolues, nous reviendrons certainement"
+  },
+  "splitter": {
+    "servicesTitle": "Services",
+    "servicesSubTitle": "Toutes nos chambres sont meublées avec goût, élégance et équipées de",
+    "placesTitle": "Lieux à visiter",
+    "placesSubTitle": "Que voir à Gravina in Puglia",
+    "locationTitle": "Où nous sommes",
+    "locationSubTitle": "Via Giudice Montea 3, 70024 Gravina in Puglia, Italie",
+    "contactsTitle": "Contacts",
+    "contactsSubTitle1": "Remplissez le formulaire ci-dessous. Sinon, contactez-nous à ",
+    "contactsSubTitle2": "ou écrivez-nous à ",
+    "button": "point de vue à proximité",
+    "vrButton": "Visite en ligne"
+  },
+  "contacts": {
+    "name": "Nom*",
+    "email": "E-Mail*",
+    "object": "Objet*",
+    "message": "Message*",
+    "send": "Envoyer"
+  },
+  "topBar": {
+    "home": "Accueil",
+    "places": "Itinéraires",
+    "location": "Où nous sommes",
+    "contacts": "Contactez-nous",
+    "book": "Réserver",
+    "frTitle": "Traduire en français",
+    "enTitle": "Traduire en anglais",
+    "itTitle": "Traduire en italien"
+  },
+  "footer": {
+    "title": "Maison de vacances Il Belvedere Via Giudice Montea, 70024 Gravina in Puglia BA",
+    "cpyr": "Tous droits réservés | Bed & Breakfast IL BELVEDERE"
+  },
+  "alert": {
+    "success": "E-MAIL ENVOYÉ AVEC SUCCÈS",
+    "error": "ERREUR D'ENVOI D'E-MAIL"
+  },
+  "informations": {
+    "rooms": "L'appartement se compose d'une chambre, d'une salle de bain avec linge de lit et serviettes, d'une télévision à écran plat, d'un coin repas avec une cuisine entièrement équipée et d'un balcon donnant sur la terrasse. Les clients de l'appartement peuvent profiter d'un petit-déjeuner italien.",
+    "place": "Le Belvédère est situé dans le centre historique de Gravina, à deux pas du pont-aqueduc. Équipé de tout le confort, le quartier est très agréable et calme. Son emplacement est excellent pour rejoindre facilement les principaux points à visiter dans notre région."
+  },
+  "modal": {
+    "air": "Chaque chambre est équipée de systèmes de climatisation de pointe pour garantir des séjours frais et agréables.",
+    "bath": "Équipé de deux salles de bain avec douche, serviettes, savons et sèche-cheveux.",
+    "towel": "Profitez de draps et serviettes frais.",
+    "wifi": "Hospitalité, connexion et partage. Pour cette raison, toute la structure est équipée de Wi-Fi pour tous les clients.",
+    "tv": "Pour une expérience d'hospitalité vraiment supérieure, chaque chambre est équipée de deux télévisions pour offrir divertissement, loisirs et informations.",
+    "entry": "Pour une plus grande intimité et tranquillité, les clients auront un accès indépendant garanti à la structure.",
+    "view": "Le balcon principal et la fenêtre offrent une vue panoramique sur le ravin et le pont-aqueduc.",
+    "clean": "Chaque chambre dispose d'un service de nettoyage quotidien, avec la possibilité d'utiliser le service de blanchisserie.",
+    "safe": "Pour des raisons de sécurité, la propriété est équipée d'extincteurs, de caméras de vidéosurveillance, de sécurité 24h/24 et d'un coffre-fort.",
+    "bagage": "Espace nécessaire pour stocker les bagages de voyage."
+  },
+  "validation": {
+    "email": "Format non valide."
+  },
+  "whatsapp": {
+    "message": "Bonjour ! J'ai besoin de plus d'informations sur le Bed and Breakfast il Belvédère."
+  }
+}

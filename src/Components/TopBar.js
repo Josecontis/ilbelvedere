@@ -7,6 +7,7 @@ import { AiOutlinePhone } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import itFlag from "../Assets/flags/it.png";
 import enFlag from "../Assets/flags/en.png";
+import frFlag from "../Assets/flags/fr.png";
 import { useState } from "react";
 
 const TopBar = () => {
@@ -19,15 +20,15 @@ const TopBar = () => {
 
   return (
     <>
-      <section class="top-nav">
+      <section className="top-nav">
         <div>
           <img alt="logo" src={logoHome} />
         </div>
         <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" htmlFor="menu-toggle">
-          <div class="menu-button"></div>
+        <label className="menu-button-container" htmlFor="menu-toggle">
+          <div className="menu-button"></div>
         </label>
-        <ul class="menu">
+        <ul className="menu">
           <li>
             <HiOutlineHome />
             <a href="/">{t("topBar.home")}</a>
@@ -59,6 +60,22 @@ const TopBar = () => {
       </section>
 
       <div className="button-translation">
+        <button
+          title="Translate to french"
+          onClick={() => {
+            changeLanguage("fr");
+            setActive("fr");
+          }}
+          style={{
+            border: "none",
+          }}
+        >
+          <img
+            className={active === "fr" ? "button-active" : ""}
+            src={frFlag}
+            alt="frFlag"
+          />
+        </button>
         <button
           title="Translate to english"
           onClick={() => {
@@ -93,7 +110,7 @@ const TopBar = () => {
       {/* <div className="top-bar">
         <img alt="logo" src={logoHome} />
         <input type="checkbox" id="nav-check" />
-        <div class="nav-btn">
+        <div className="nav-btn">
           <label for="nav-check">
             <span></span>
             <span></span>
