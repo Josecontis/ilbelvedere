@@ -107,10 +107,6 @@
     align-items: center;
 }
 
-.services:hover {
-    cursor: pointer;
-}
-
 .services svg {
     margin: 0 auto;
     color: var(--global-light-green);

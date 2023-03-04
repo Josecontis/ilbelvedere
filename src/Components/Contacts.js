@@ -88,7 +88,7 @@ export const Contacts = () => {
               let emailTest = new RegExp(
                 "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})"
               );
-              email !== "" && setValidation(emailTest.test(email));
+              email !== "" && setValidation(emailTest.test(e.target.value));
             }}
           />
         </div>
@@ -118,10 +118,6 @@ export const Contacts = () => {
         }
         onClick={(e) => {
           name && email && object && message && validation && sendEmail(e);
-          setName("");
-          setEmail("");
-          setObject("");
-          setMessage("");
         }}
       >
         {t("contacts.send")}
