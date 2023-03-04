@@ -1,37 +1,40 @@
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { IoIosArrowUp } from "react-icons/io";
 
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./App.css";
 import { Footer } from "./Components/Footer";
 import TopBar from "./Components/TopBar";
 import Home from "./Pages/Home";
 import "./translations/i18next";
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 
 const App = () => {
   const { t } = useTranslation();
   // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction();
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
   };
 
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      document.getElementById("myBtn").style.display = "block";
-    } else {
-      document.getElementById("myBtn").style.display = "none";
-    }
-  }
+  const scrollToTop = () => {
+    const scrollStep = -window.scrollY / (500 / 15);
+    const scrollInterval = setInterval(() => {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15);
+  };
 
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  window.addEventListener("scroll", handleScroll);
+
   const [whatsappUrl, setWhatsappUrl] = useState("");
 
   useEffect(() => {
@@ -57,14 +60,16 @@ const App = () => {
         >
           <AiOutlineWhatsApp />
         </a>
-        <button
-          className="button-to-top"
-          onClick={topFunction}
-          id="myBtn"
-          title="Go to top"
-        >
-          <IoIosArrowUp />
-        </button>
+        {showButton && (
+          <button
+            className="button-to-top"
+            onClick={scrollToTop}
+            id="myBtn"
+            title="Go to top"
+          >
+            <IoIosArrowUp />
+          </button>
+        )}
       </div>
       <Footer />
     </>
