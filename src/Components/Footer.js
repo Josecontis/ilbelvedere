@@ -9,7 +9,9 @@ export const Footer = () => {
     <div className="footer">
       <div className="ribbon">
         <span>
-          <div className="booking">booking.com</div>
+          <div className="booking">
+            Booking<div>.com</div>
+          </div>
           <div className="rate">9.4</div>
         </span>
       </div>

@@ -97,7 +97,7 @@
 
 .ribbon {
     position: absolute;
-    top: -6.1px;
+    top: -14px;
     right: 20px;
     color: white;
     font-size: 12px;
@@ -110,23 +110,29 @@
     height: 0;
     border-left: 104px solid transparent;
     border-right: 96px solid transparent;
-    border-top: 26px solid var(--global-booking-cian);
+    border-top: 26px solid var(--global-booking-blue);
 }
 
 .ribbon span {
     position: relative;
     display: block;
     text-align: center;
-    background: var(--global-booking-cian);
+    background:
+        var(--global-booking-blue);
     line-height: 36px;
     padding-top: 20px;
-    border-top-right-radius: 8px;
+    border-top-right-radius: 16px;
     width: 200px;
 }
 
 .ribbon span .booking {
+    display: inline-flex;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
+}
+
+.ribbon span .booking>div {
+    color: var(--global-booking-cian);
 }
 
 .ribbon span .rate {
@@ -141,20 +147,20 @@
 }
 
 .ribbon span:before {
-    height: 6px;
-    width: 6px;
-    left: -6px;
+    height: 14px;
+    width: 16px;
+    left: -10px;
     top: 0;
-    background: var(--global-booking-cian);
+    background: var(--global-booking-blue);
 }
 
 .ribbon span:after {
-    height: 6px;
-    width: 8px;
-    left: -8px;
+    height: 14px;
+    width: 24px;
+    left: -24px;
     top: 0;
-    border-radius: 8px 8px 0 0;
-    background: var(--global-booking-blue);
+    border-radius: 16px 16px 0 0;
+    background: var(--global-booking-cian);
 }
 
 @media (max-width: 1100px) {
