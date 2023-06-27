@@ -47,11 +47,6 @@ const Home = () => {
       description: t("modal.wifi"),
     },
     {
-      icon: <RiComputerFill />,
-      label: t("services.tv"),
-      description: t("modal.tv"),
-    },
-    {
       icon: <BsDoorClosedFill />,
       label: t("services.entry"),
       description: t("modal.entry"),

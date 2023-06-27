@@ -1,4 +1,3 @@
-import img23 from "../Assets/multiview/277590579_109031505100742_5854193538793875700_n.jpg";
 import img22 from "../Assets/multiview/277581948_109031998434026_2889768993433374264_n.jpg";
 import img21 from "../Assets/multiview/277589816_109031765100716_1818497939950045169_n.jpg";
 import img20 from "../Assets/multiview/352259719.jpg";
@@ -12,12 +11,10 @@ import img13 from "../Assets/multiview/277581948_109032288433997_498205254232170
 import img12 from "../Assets/multiview/277579413_109032205100672_6309431047501740192_n.jpg";
 import img11 from "../Assets/multiview/277570340_109031698434056_6490037133906561689_n.jpg";
 import img10 from "../Assets/multiview/342668405.jpg";
-import img9 from "../Assets/multiview/277536006_109031748434051_8791200465492750750_n.jpg";
 import img8 from "../Assets/multiview/352259883.jpg";
 import img7 from "../Assets/multiview/333730194.jpg";
 import img6 from "../Assets/multiview/352259785.jpg";
 import img4 from "../Assets/multiview/277526957_109031591767400_1756184234998720918_n.jpg";
-import img3 from "../Assets/multiview/336253141.jpg";
 import img2 from "../Assets/multiview/336253144.jpg";
 import img1 from "../Assets/multiview/336253143.jpg";
 import "./ServicesImageViewer.css";
@@ -27,12 +24,10 @@ export const ServicesImageViewer = () => {
   const homeImages = [
     img1,
     img2,
-    img3,
     img4,
     img6,
     img7,
     img8,
-    img9,
     img10,
     img11,
     img12,
@@ -46,7 +41,6 @@ export const ServicesImageViewer = () => {
     img20,
     img21,
     img22,
-    img23,
   ];
 
   function openModal() {

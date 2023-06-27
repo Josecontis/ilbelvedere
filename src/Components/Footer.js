@@ -7,15 +7,21 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="footer">
+      <div className="ribbon">
+        <span>
+          <div className="booking">booking.com</div>
+          <div className="rate">9.4</div>
+        </span>
+      </div>
       <div className="footer-logo">
         <img alt="logo" src={logoHome} />
       </div>
       <div className="footer-info">{t("footer.title")}</div>
       <div className="footer-sites">
-        <div className="booking-badge">
+        {/* <div className="booking-badge">
           <span>Booking.com</span>
-          <div className="booking-rate">9.3</div>
-        </div>
+          <div className="booking-rate">9.4</div>
+        </div> */}
         <div style={{ float: "left" }}>
           <iframe
             title="faceboog-badge"
