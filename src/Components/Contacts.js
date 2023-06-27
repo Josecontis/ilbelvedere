@@ -16,7 +16,7 @@ export const Contacts = () => {
     let templateParams = {
       from_name: name,
       subject: object,
-      to_name: "ilbelvederegravina@gmail.com",
+      to_name: "ilbelvederegravina@outlook.it",
       message_html: message,
       from_email: email,
       reply_to: email,

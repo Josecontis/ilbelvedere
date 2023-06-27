@@ -7,14 +7,20 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="footer">
-      <div className="ribbon">
-        <span>
-          <div className="booking">
-            Booking<div>.com</div>
-          </div>
-          <div className="rate">9.4</div>
-        </span>
-      </div>
+      <a
+        rel="noreferrer"
+        target="_blank"
+        href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html#tab-reviews"
+      >
+        <div className="ribbon">
+          <span>
+            <div className="booking">
+              Booking<div>.com</div>
+            </div>
+            <div className="rate">9.4</div>
+          </span>
+        </div>
+      </a>
       <div className="footer-logo">
         <img alt="logo" src={logoHome} />
       </div>
