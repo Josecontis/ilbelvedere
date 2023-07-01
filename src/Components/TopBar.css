@@ -233,7 +233,6 @@
 .button-translation button {
     height: 40px;
     width: 40px;
-    outline: none;
     border: none;
     background-color: transparent;
     margin-left: auto;
@@ -243,9 +242,4 @@
 
 .button-translation .button-active {
     transform: scale(1.4);
-}
-
-.button-translation button:focus {
-    outline: none;
-    opacity: 1;
 }

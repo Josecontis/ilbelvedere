@@ -34,3 +34,7 @@ a {
 a:hover {
   color: #425141;
 }
+
+button:focus {
+  outline: none;
+}
