@@ -1,14 +1,16 @@
-import "./TopBar.css";
-import { HiOutlineHome } from "react-icons/hi";
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { HiOutlinePhotograph } from "react-icons/hi";
-import logoHome from "../Assets/logo/logoHomeWhiteSmall.png";
-import { AiOutlinePhone } from "react-icons/ai";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import itFlag from "../Assets/flags/it.png";
+import { AiOutlinePhone } from "react-icons/ai";
+import {
+  HiOutlineHome,
+  HiOutlineLocationMarker,
+  HiOutlinePhotograph,
+} from "react-icons/hi";
 import enFlag from "../Assets/flags/en.png";
 import frFlag from "../Assets/flags/fr.png";
-import { useState } from "react";
+import itFlag from "../Assets/flags/it.png";
+import logoHome from "../Assets/logo/logoHomeWhiteSmall.png";
+import "./TopBar.css";
 
 const TopBar = () => {
   const { t, i18n } = useTranslation();
@@ -106,46 +108,6 @@ const TopBar = () => {
           />
         </button>
       </div>
-
-      {/* <div className="top-bar">
-        <img alt="logo" src={logoHome} />
-        <input type="checkbox" id="nav-check" />
-        <div className="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div className="info">
-          <HiOutlineHome />
-          <a href="/">{t("topBar.home")}</a>
-        </div>
-        <div className="info">
-          <HiOutlinePhotograph />
-          <a href="#places-slideshow">{t("topBar.places")}</a>
-        </div>
-        <div className="info">
-          <HiOutlineLocationMarker />
-          <a href="#location">{t("topBar.location")}</a>
-        </div>
-        <div className="info">
-          <AiOutlinePhone />
-          <a href="#contacts">{t("topBar.contacts")}</a>
-        </div>
-        <div className="info">
-          <button>
-            <a
-              rel="noreferrer"
-              href="https://www.booking.com/hotel/it/il-belvedere-gravina-in-puglia.it.html"
-              target="_blank"
-            >
-              {t("topBar.book")}
-            </a>
-          </button>
-        </div>
-      </div>
-      */}
     </>
   );
 };

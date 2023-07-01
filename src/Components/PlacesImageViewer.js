@@ -1,17 +1,17 @@
-import imgPlaces12 from "../Assets/places/352272261.jpg";
-import imgPlaces11 from "../Assets/places/353277262.jpg";
-import imgPlaces10 from "../Assets/places/335223262.jpg";
-import imgPlaces9 from "../Assets/places/352014815.jpg";
-import imgPlaces8 from "../Assets/places/352014814.jpg";
-import imgPlaces7 from "../Assets/places/352014813.jpg";
-import imgPlaces6 from "../Assets/places/352277261.jpg";
-import imgPlaces5 from "../Assets/places/352277260.jpg";
-import imgPlaces4 from "../Assets/places/351791653.jpg";
-import imgPlaces3 from "../Assets/places/352277259.jpg";
-import imgPlaces2 from "../Assets/places/352277267.jpg";
-import imgPlaces1 from "../Assets/places/352277262.jpg";
-import "./PlacesImageViewer.css";
 import { IoClose } from "react-icons/io5";
+import imgPlaces10 from "../Assets/places/335223262.jpg";
+import imgPlaces4 from "../Assets/places/351791653.jpg";
+import imgPlaces7 from "../Assets/places/352014813.jpg";
+import imgPlaces8 from "../Assets/places/352014814.jpg";
+import imgPlaces9 from "../Assets/places/352014815.jpg";
+import imgPlaces12 from "../Assets/places/352272261.jpg";
+import imgPlaces3 from "../Assets/places/352277259.jpg";
+import imgPlaces5 from "../Assets/places/352277260.jpg";
+import imgPlaces6 from "../Assets/places/352277261.jpg";
+import imgPlaces1 from "../Assets/places/352277262.jpg";
+import imgPlaces2 from "../Assets/places/352277267.jpg";
+import imgPlaces11 from "../Assets/places/353277262.jpg";
+import "./PlacesImageViewer.css";
 
 export const PlacesImageViewer = () => {
   const placeImages = [

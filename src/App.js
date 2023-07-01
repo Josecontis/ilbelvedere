@@ -1,8 +1,7 @@
-import { AiOutlineWhatsApp } from "react-icons/ai";
-import { IoIosArrowUp } from "react-icons/io";
-
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { IoIosArrowUp } from "react-icons/io";
 import "./App.css";
 import { Footer } from "./Components/Footer";
 import TopBar from "./Components/TopBar";

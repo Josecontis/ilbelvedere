@@ -1,24 +1,24 @@
-import img22 from "../Assets/multiview/277581948_109031998434026_2889768993433374264_n.jpg";
-import img21 from "../Assets/multiview/277589816_109031765100716_1818497939950045169_n.jpg";
-import img20 from "../Assets/multiview/352259719.jpg";
-import img19 from "../Assets/multiview/277810455_109032015100691_4577438248796085368_n.jpg";
-import img18 from "../Assets/multiview/333730240.jpg";
-import img17 from "../Assets/multiview/277585418_109031981767361_5713350924353364172_n.jpg";
-import img16 from "../Assets/multiview/277566551_109031935100699_155358525707831072_n.jpg";
-import img15 from "../Assets/multiview/277566551_109031935100699_155358525707832272_n.jpg";
-import img14 from "../Assets/multiview/277566551_109031935100699_155358525707831272_n.jpg";
-import img13 from "../Assets/multiview/277581948_109032288433997_4982052542321704997_n.jpg";
-import img12 from "../Assets/multiview/277579413_109032205100672_6309431047501740192_n.jpg";
-import img11 from "../Assets/multiview/277570340_109031698434056_6490037133906561689_n.jpg";
-import img10 from "../Assets/multiview/342668405.jpg";
-import img8 from "../Assets/multiview/352259883.jpg";
-import img7 from "../Assets/multiview/333730194.jpg";
-import img6 from "../Assets/multiview/352259785.jpg";
-import img4 from "../Assets/multiview/277526957_109031591767400_1756184234998720918_n.jpg";
-import img2 from "../Assets/multiview/336253144.jpg";
-import img1 from "../Assets/multiview/336253143.jpg";
-import "./ServicesImageViewer.css";
 import { IoClose } from "react-icons/io5";
+import img4 from "../Assets/multiview/277526957_109031591767400_1756184234998720918_n.jpg";
+import img16 from "../Assets/multiview/277566551_109031935100699_155358525707831072_n.jpg";
+import img14 from "../Assets/multiview/277566551_109031935100699_155358525707831272_n.jpg";
+import img15 from "../Assets/multiview/277566551_109031935100699_155358525707832272_n.jpg";
+import img11 from "../Assets/multiview/277570340_109031698434056_6490037133906561689_n.jpg";
+import img12 from "../Assets/multiview/277579413_109032205100672_6309431047501740192_n.jpg";
+import img22 from "../Assets/multiview/277581948_109031998434026_2889768993433374264_n.jpg";
+import img13 from "../Assets/multiview/277581948_109032288433997_4982052542321704997_n.jpg";
+import img17 from "../Assets/multiview/277585418_109031981767361_5713350924353364172_n.jpg";
+import img21 from "../Assets/multiview/277589816_109031765100716_1818497939950045169_n.jpg";
+import img19 from "../Assets/multiview/277810455_109032015100691_4577438248796085368_n.jpg";
+import img7 from "../Assets/multiview/333730194.jpg";
+import img18 from "../Assets/multiview/333730240.jpg";
+import img1 from "../Assets/multiview/336253143.jpg";
+import img2 from "../Assets/multiview/336253144.jpg";
+import img10 from "../Assets/multiview/342668405.jpg";
+import img20 from "../Assets/multiview/352259719.jpg";
+import img6 from "../Assets/multiview/352259785.jpg";
+import img8 from "../Assets/multiview/352259883.jpg";
+import "./ServicesImageViewer.css";
 
 export const ServicesImageViewer = () => {
   const homeImages = [

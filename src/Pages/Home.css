@@ -268,8 +268,7 @@ img {
     }
 
     .sub-label {
-        font-size: 4px;
-        bottom: 30%;
+        display: none;
     }
 }
 
@@ -299,7 +298,6 @@ img {
     }
 
     .sub-label {
-        font-size: 4px;
-        bottom: 13%;
+        display: none;
     }
 }

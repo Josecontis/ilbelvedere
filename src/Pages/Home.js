@@ -1,26 +1,25 @@
-import "./Home.css";
-import coffeImg from "../Assets/cropped/352260130crop.jpg";
-import bedImg from "../Assets/cropped/DSC08166.jpg";
-import bathImg from "../Assets/cropped/342667958crop.jpg";
-import gravImg from "../Assets/places/ponte.png";
-import Splitter from "../Components/Splitter";
-import { IoBedOutline, IoCompassOutline } from "react-icons/io5";
-import { RiComputerFill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 import { AiFillEye } from "react-icons/ai";
-import { GiBoatPropeller } from "react-icons/gi";
 import { BsDoorClosedFill, BsSafe2Fill } from "react-icons/bs";
+import { FaShower, FaWifi } from "react-icons/fa";
+import { GiBoatPropeller } from "react-icons/gi";
+import { IoBedOutline, IoCompassOutline } from "react-icons/io5";
 import {
   MdDryCleaning,
   MdLocalLaundryService,
   MdLuggage,
 } from "react-icons/md";
-import { FaWifi, FaShower } from "react-icons/fa";
-import { ServicesImageViewer } from "../Components/ServicesImageViewer";
-import { useTranslation } from "react-i18next";
-import { Contacts } from "../Components/Contacts";
-import { PlacesImageViewer } from "../Components/PlacesImageViewer";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import bathImg from "../Assets/cropped/342667958crop.jpg";
+import coffeImg from "../Assets/cropped/352260130crop.jpg";
+import bedImg from "../Assets/cropped/DSC08166.jpg";
+import gravImg from "../Assets/places/ponte.png";
+import { Contacts } from "../Components/Contacts";
+import { PlacesImageViewer } from "../Components/PlacesImageViewer";
+import { ServicesImageViewer } from "../Components/ServicesImageViewer";
+import Splitter from "../Components/Splitter";
+import "./Home.css";
 
 const Home = () => {
   const { t } = useTranslation();

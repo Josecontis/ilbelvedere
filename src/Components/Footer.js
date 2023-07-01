@@ -1,6 +1,6 @@
-import "./Footer.css";
-import logoHome from "../Assets/logo/logoHomeWhiteSmall.png";
 import { useTranslation } from "react-i18next";
+import logoHome from "../Assets/logo/logoHomeWhiteSmall.png";
+import "./Footer.css";
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -26,10 +26,6 @@ export const Footer = () => {
       </div>
       <div className="footer-info">{t("footer.title")}</div>
       <div className="footer-sites">
-        {/* <div className="booking-badge">
-          <span>Booking.com</span>
-          <div className="booking-rate">9.4</div>
-        </div> */}
         <div style={{ float: "left", width: "200px" }}>
           <iframe
             title="faceboog-badge"
