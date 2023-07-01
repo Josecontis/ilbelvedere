@@ -30,7 +30,7 @@ export const Footer = () => {
           <span>Booking.com</span>
           <div className="booking-rate">9.4</div>
         </div> */}
-        <div style={{ float: "left" }}>
+        <div style={{ float: "left", width: "200px" }}>
           <iframe
             title="faceboog-badge"
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPatriziaLorussoBeb&tabs=eventi&width=250&height=60&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
@@ -43,7 +43,7 @@ export const Footer = () => {
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
         </div>
-        <div style={{ float: "right", textAlign: "left" }}>
+        <div style={{ float: "right", marginTop: "10px" }}>
           Cell.: <span>(+39) 327 577 7844</span> <br />
           Email: <span>ilbelvederegravina@outlook.it</span>
         </div>

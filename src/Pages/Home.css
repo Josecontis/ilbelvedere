@@ -187,14 +187,17 @@ img {
 
     .welcome-text {
         font-size: 70px;
+        bottom: 30%;
     }
 
     .label {
         font-size: 18px;
+        bottom: 22%;
     }
 
     .sub-label {
         font-size: 12px;
+        bottom: 18%;
     }
 
 }
@@ -216,14 +219,17 @@ img {
 
     .welcome-text {
         font-size: 50px;
+        bottom: 45%;
     }
 
     .label {
         font-size: 12px;
+        bottom: 37%;
     }
 
     .sub-label {
         font-size: 8px;
+        bottom: 34%;
     }
 }
 
@@ -237,7 +243,7 @@ img {
 
 
 
-@media screen and (max-width: 600px) and (min-width: 300px) {
+@media screen and (max-width: 600px) and (min-width: 450px) {
 
     .slideshow-container,
     .slideshow-container img {
@@ -252,17 +258,48 @@ img {
     }
 
     .welcome-text {
-        font-size: 40px;
-        bottom: 45%;
+        font-size: 33px;
+        bottom: 39%;
     }
 
     .label {
-        font-size: 8px;
-        bottom: 40%;
+        font-size: 7px;
+        bottom: 32%;
     }
 
     .sub-label {
         font-size: 4px;
-        bottom: 37%;
+        bottom: 30%;
+    }
+}
+
+
+@media screen and (max-width: 450px) and (min-width: 300px) {
+
+    .slideshow-container,
+    .slideshow-container img {
+        height: 320px;
+    }
+
+    .review-label-coffe .review-author-coffe,
+    .review-label-bath .review-author-bath,
+    .review-label-bath,
+    .review-label-coffe {
+        display: none;
+    }
+
+    .welcome-text {
+        font-size: 33px;
+        bottom: 25%;
+    }
+
+    .label {
+        font-size: 7px;
+        bottom: 16%;
+    }
+
+    .sub-label {
+        font-size: 4px;
+        bottom: 13%;
     }
 }
