@@ -68,9 +68,6 @@ const TopBar = () => {
             changeLanguage("fr");
             setActive("fr");
           }}
-          style={{
-            border: "none",
-          }}
         >
           <img
             className={active === "fr" ? "button-active" : ""}
@@ -83,9 +80,6 @@ const TopBar = () => {
           onClick={() => {
             changeLanguage("en");
             setActive("en");
-          }}
-          style={{
-            border: "none",
           }}
         >
           <img

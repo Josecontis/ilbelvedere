@@ -230,16 +230,21 @@
     opacity: 0.5;
 }
 
-.button-translation .button-active {
-    transform: scale(1.4);
-}
-
 .button-translation button {
     height: 40px;
     width: 40px;
+    outline: none;
     border: none;
     background-color: transparent;
     margin-left: auto;
     border-radius: 5px;
     transition-duration: 1s;
+}
+
+.button-translation .button-active {
+    transform: scale(1.4);
+}
+
+.button-translation button:focus {
+    outline: none;
 }

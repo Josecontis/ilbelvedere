@@ -26,7 +26,7 @@ export const Footer = () => {
       </div>
       <div className="footer-info">{t("footer.title")}</div>
       <div className="footer-sites">
-        <div style={{ float: "left", width: "200px" }}>
+        <div style={{ float: "left" }}>
           <iframe
             title="faceboog-badge"
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPatriziaLorussoBeb&tabs=eventi&width=250&height=60&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"

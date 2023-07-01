@@ -58,43 +58,6 @@
     font-size: 14px;
 }
 
-/* .booking-badge {
-    position: absolute;
-    right: 0px;
-    width: 200px;
-    z-index: 0;
-    height: 60px;
-    background-color: var(--global-booking-blue);
-    color: var(--global-white);
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-.booking-badge span {
-    margin-top: 5px;
-    height: 28px;
-    width: 172px;
-    font-weight: 600;
-    text-align: center;
-    border-bottom: 1px solid var(--global-booking-cian);
-}
-
-.booking-rate {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    margin-right: -30px;
-    align-items: center;
-    font-weight: 600;
-    justify-content: center;
-    background-color: var(--global-booking-cian);
-    color: var(--global-white);
-    border-radius: 10px;
-} */
-
 .ribbon {
     cursor: pointer;
     position: absolute;
