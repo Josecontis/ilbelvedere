@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: var(--global-dark-green);
-    color: #FFF;
+    color: var(--global-white);
     height: 60px;
     width: 100%;
     z-index: 3;
@@ -104,7 +104,7 @@
 .menu-button::before,
 .menu-button::after {
     display: block;
-    background-color: #fff;
+    background-color: var(--global-white);
     position: absolute;
     height: 4px;
     width: 24px;
@@ -167,7 +167,7 @@
     }
 
     #menu-toggle:checked~.menu li {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid var(--global-brown);
         height: 100%;
     }
 
@@ -181,12 +181,12 @@
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        color: white;
+        color: var(--global-white);
         background-color: var(--global-dark-green);
     }
 
     .menu>li:not(:last-child) {
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid var(--global-dark-green);
     }
 
 }

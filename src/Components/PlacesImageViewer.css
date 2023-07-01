@@ -40,7 +40,7 @@
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
-  color: white;
+  color: var(--global-white);
   padding: 12px;
   font-size: 20px;
 }
