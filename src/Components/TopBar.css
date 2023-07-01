@@ -247,4 +247,5 @@
 
 .button-translation button:focus {
     outline: none;
+    opacity: 1;
 }
